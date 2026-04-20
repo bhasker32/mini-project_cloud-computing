@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+    <title>Plan Your Visit - Beyond Everest</title>
+    <link rel="stylesheet" href="hfstyles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .hero { border-radius: var(--radius-xl); margin: 1.5rem 0; min-height: 480px; } .tabs h2 { font-size: clamp(1.375rem, 3vw, 1.875rem); font-weight: 800; color: var(--color-text); margin-bottom: 1.5rem; }
+    </style>
+</head>
+
+
+
+<body>
+    <div id="header"></div>
+
+    <div class="container">
+        <section class="hero">
+            <img src="images/planhero.jpg" alt="Nepal Mountains" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Plan Your Nepal Adventure</h1>
+                <p>Discover the mystical land of mountains, ancient traditions, and vibrant cultures. Let us help you plan an unforgettable journey to Nepal.</p>
+            </div>
+        </section>
+        
+        <section class="planning-sections">
+            <div class="planning-card">
+                <img src="images/planpic1.jpg" alt="Best Time to Visit">
+                <div class="planning-content">
+                    <h3>Best Time to Visit</h3>
+                    <p>Nepal experiences four main seasons, each offering a unique experience. Learn the best time to visit based on your interests.</p>
+                    <a href="#when-to-visit" class="btn">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="planning-card">
+                <img src="images/plan2.avif" alt="Popular Destinations">
+                <div class="planning-content">
+                    <h3>Popular Destinations</h3>
+                    <p>From the mighty Himalayas to ancient temples and vibrant cities, explore Nepal's must-visit destinations.</p>
+                    <a href="#destinations" class="btn">Explore</a>
+                </div>
+            </div>
+            
+            <div class="planning-card">
+                <img src="images/plan3.jpg" alt="Cultural Experiences">
+                <div class="planning-content">
+                    <h3>Cultural Experiences</h3>
+                    <p>Immerse yourself in Nepal's rich traditions, festivals, and authentic cultural experiences.</p>
+                    <a href="#culture" class="btn">Discover</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tabs" id="when-to-visit">
+            <h2>Planning Your Trip</h2>
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="seasons">When to Visit</button>
+                <button class="tab-btn" data-tab="itineraries">Suggested Itineraries</button>
+                <button class="tab-btn" data-tab="permits">Visas & Permits</button>
+                <button class="tab-btn" data-tab="culture">Cultural Guidelines</button>
+            </div>
+            
+            <div class="tab-content active" id="seasons">
+                <h3>Best Time to Visit Nepal</h3>
+                <p>Nepal has four distinct seasons, each offering a unique experience for travelers:</p>
+                
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Spring (March-May)</h4>
+                        <p>Perfect for trekking and mountain views. The weather is moderate with clear skies, and rhododendron forests bloom spectacularly in the mountains.</p>
+                        <p><strong>Ideal for:</strong> Trekking, Wildlife Viewing, Cultural Tours</p>
+                        <a href="https://en.wikipedia.org/wiki/Geography_of_Nepal#Climate" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Summer/Monsoon (June-August)</h4>
+                        <p>The monsoon season brings heavy rainfall throughout the country. While trekking can be challenging, this is a great time to explore rain-shadow areas like Upper Mustang.</p>
+                        <p><strong>Ideal for:</strong> Rain-shadow areas, Cultural Experiences, Lower Rates</p>
+                        <a href="https://en.wikipedia.org/wiki/Geography_of_Nepal#Climate" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Autumn (September-November)</h4>
+                        <p>The most popular season for visitors. Clear skies, moderate temperatures, and stunning mountain views make it ideal for trekking and outdoor activities.</p>
+                        <p><strong>Ideal for:</strong> Trekking, Photography, Festivals</p>
+                        <a href="https://en.wikipedia.org/wiki/Geography_of_Nepal#Climate" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Winter (December-February)</h4>
+                        <p>Cold in the mountains but pleasant in lower elevations. Less crowded trails and clear mountain views make it good for certain treks.</p>
+                        <p><strong>Ideal for:</strong> Lower Altitude Treks, City Tours, Jungle Safaris</p>
+                        <a href="https://en.wikipedia.org/wiki/Geography_of_Nepal#Climate" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="itineraries">
+                <h3>Suggested Itineraries</h3>
+                <p>Whether you have a week or a month, here are some itineraries to make the most of your Nepal visit:</p>
+                
+                <div class="itinerary">
+                    <h4>1-Week Cultural Tour <span>+</span></h4>
+                    <div class="itinerary-content">
+                        <p><strong>Day 1-2:</strong> Explore Kathmandu Valley's UNESCO World Heritage Sites</p>
+                        <p><strong>Day 3-4:</strong> Visit Pokhara and enjoy Lake Phewa</p>
+                        <p><strong>Day 5-6:</strong> Experience Bandipur or Nagarkot</p>
+                        <p><strong>Day 7:</strong> Return to Kathmandu</p>
+                        <a href="https://www.welcomenepal.com/plan-your-trip/suggested-itinerary.html" class="btn" target="_blank">Detailed Itinerary</a>
+                    </div>
+                </div>
+                
+                <div class="itinerary">
+                    <h4>2-Week Trekking Adventure <span>+</span></h4>
+                    <div class="itinerary-content">
+                        <p><strong>Day 1-2:</strong> Explore Kathmandu</p>
+                        <p><strong>Day 3-12:</strong> Annapurna Base Camp Trek or Everest Base Camp Trek</p>
+                        <p><strong>Day 13-14:</strong> Relaxation in Pokhara or Kathmandu</p>
+                        <a href="https://www.welcomenepal.com/plan-your-trip/suggested-itinerary.html" class="btn" target="_blank">Detailed Itinerary</a>
+                    </div>
+                </div>
+                
+                <div class="itinerary">
+                    <h4>3-Week Complete Nepal Experience <span>+</span></h4>
+                    <div class="itinerary-content">
+                        <p><strong>Day 1-3:</strong> Kathmandu Valley exploration</p>
+                        <p><strong>Day 4-14:</strong> Trekking in Annapurna or Everest region</p>
+                        <p><strong>Day 15-17:</strong> Chitwan National Park safari</p>
+                        <p><strong>Day 18-20:</strong> Lumbini (Birthplace of Buddha)</p>
+                        <p><strong>Day 21:</strong> Return to Kathmandu</p>
+                        <a href="https://www.welcomenepal.com/plan-your-trip/suggested-itinerary.html" class="btn" target="_blank">Detailed Itinerary</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="permits">
+                <h3>Visas & Permits</h3>
+                <p>Before planning your trip to Nepal, ensure you have all the necessary documentation:</p>
+                
+                <h4>Tourist Visa</h4>
+                <p>Most visitors need a visa to enter Nepal. Visas can be obtained on arrival at Tribhuvan International Airport or at Nepal's land borders with India and Tibet.</p>
+                <ul>
+                    <li>15-day visa: $30 USD</li>
+                    <li>30-day visa: $50 USD</li>
+                    <li>90-day visa: $125 USD</li>
+                </ul>
+                <p>You can also apply online through the <a href="http://online.nepalimmigration.gov.np/" target="_blank">Department of Immigration website</a>.</p>
+                
+                <h4>Trekking Permits</h4>
+                <p>Different trekking areas require specific permits:</p>
+                <ul>
+                    <li><strong>Trekkers' Information Management System (TIMS) Card:</strong> Required for most trekking routes</li>
+                    <li><strong>Conservation Area Permits:</strong> Required for protected areas like Annapurna, Manaslu, Kanchenjunga</li>
+                    <li><strong>Restricted Area Permits:</strong> Required for regions like Upper Mustang, Upper Dolpo, and Tsum Valley</li>
+                </ul>
+                <a href="https://www.welcomenepal.com/plan-your-trip/nepal-visa-information.html" class="btn" target="_blank">Official Visa Information</a>
+            </div>
+            
+            <div class="tab-content" id="culture">
+                <h3>Cultural Guidelines</h3>
+                <p>Nepal is rich in cultural diversity with deep religious traditions. Follow these guidelines to show respect for local customs:</p>
+                
+                <div class="culture-items">
+                    <div class="season-card">
+                        <h4>Religious Sites</h4>
+                        <ul>
+                            <li>Remove shoes before entering temples and monasteries</li>
+                            <li>Ask permission before taking photos</li>
+                            <li>Walk clockwise around stupas and religious monuments</li>
+                            <li>Avoid touching offerings or religious objects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Greetings & Interactions</h4>
+                        <ul>
+                            <li>Use "Namaste" with palms together as a respectful greeting</li>
+                            <li>Ask permission before photographing people</li>
+                            <li>Public displays of affection are frowned upon</li>
+                            <li>The left hand is considered unclean; use right hand for giving and receiving</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Dress Code</h4>
+                        <ul>
+                            <li>Dress modestly, especially at religious sites</li>
+                            <li>Cover shoulders and knees when visiting temples</li>
+                            <li>Remove leather items before entering certain Hindu temples</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Culture_of_Nepal" class="btn" target="_blank">Learn More About Nepali Culture</a>
+            </div>
+        </section>
+        
+        <section class="tabs" id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="mountains">Mountains & Trekking</button>
+                <button class="tab-btn" data-tab="cities">Cities & Heritage</button>
+                <button class="tab-btn" data-tab="wildlife">Wildlife & Nature</button>
+                <button class="tab-btn" data-tab="spiritual">Spiritual Sites</button>
+            </div>
+            
+            <div class="tab-content active" id="mountains">
+                <h3>Mountains & Trekking Destinations</h3>
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Everest Region</h4>
+                        <p>Home to the world's highest peak, the Everest region offers spectacular treks including the famous Everest Base Camp Trek.</p>
+                        <p><strong>Major attractions:</strong> Mount Everest, Kala Patthar, Namche Bazaar, Tengboche Monastery</p>
+                        <a href="https://en.wikipedia.org/wiki/Mount_Everest" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Annapurna Region</h4>
+                        <p>Nepal's most popular trekking destination featuring diverse landscapes from subtropical forests to high alpine terrain.</p>
+                        <p><strong>Major attractions:</strong> Annapurna Circuit, Annapurna Base Camp, Poon Hill, Thorong La Pass</p>
+                        <a href="https://en.wikipedia.org/wiki/Annapurna_Circuit" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Langtang Valley</h4>
+                        <p>A beautiful alpine valley close to Kathmandu, offering excellent trekking without the crowds.</p>
+                        <p><strong>Major attractions:</strong> Kyanjin Gompa, Langtang Peak, Tserko Ri, Gosainkunda Lakes</p>
+                        <a href="https://en.wikipedia.org/wiki/Langtang" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Upper Mustang</h4>
+                        <p>A remote, semi-arid region with Tibetan cultural influence and spectacular landscape.</p>
+                        <p><strong>Major attractions:</strong> Lo Manthang, Sky Caves, Chhoser, Mustang Himal</p>
+                        <a href="https://en.wikipedia.org/wiki/Upper_Mustang" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="cities">
+                <h3>Cities & Cultural Heritage</h3>
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Kathmandu</h4>
+                        <p>Nepal's capital city is a cultural treasure trove with numerous UNESCO World Heritage Sites.</p>
+                        <p><strong>Major attractions:</strong> Durbar Square, Swayambhunath (Monkey Temple), Boudhanath Stupa, Pashupatinath Temple</p>
+                        <a href="https://en.wikipedia.org/wiki/Kathmandu" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Pokhara</h4>
+                        <p>Nepal's adventure capital with stunning lake views and a gateway to the Annapurna range.</p>
+                        <p><strong>Major attractions:</strong> Phewa Lake, World Peace Pagoda, Sarangkot, Davis Falls</p>
+                        <a href="https://en.wikipedia.org/wiki/Pokhara" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Bhaktapur</h4>
+                        <p>A living museum of medieval arts and architecture with well-preserved ancient buildings.</p>
+                        <p><strong>Major attractions:</strong> Durbar Square, Nyatapola Temple, Pottery Square, 55 Window Palace</p>
+                        <a href="https://en.wikipedia.org/wiki/Bhaktapur" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Bandipur</h4>
+                        <p>A charming hilltop town showcasing traditional Newari architecture and culture.</p>
+                        <p><strong>Major attractions:</strong> Old Bazaar, Thani Mai Temple, Siddha Cave, Tundikhel</p>
+                        <a href="https://en.wikipedia.org/wiki/Bandipur,_Nepal" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="wildlife">
+                <h3>Wildlife & Nature</h3>
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Chitwan National Park</h4>
+                        <p>Nepal's first national park and a UNESCO World Heritage Site known for its biodiversity.</p>
+                        <p><strong>Wildlife:</strong> One-horned rhinoceros, Bengal tigers, sloth bears, crocodiles, over 500 bird species</p>
+                        <a href="https://en.wikipedia.org/wiki/Chitwan_National_Park" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Bardia National Park</h4>
+                        <p>Nepal's largest national park offering a more remote and less-visited wildlife experience.</p>
+                        <p><strong>Wildlife:</strong> Tigers, elephants, rhinos, Gangetic dolphins, various deer species</p>
+                        <a href="https://en.wikipedia.org/wiki/Bardia_National_Park" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Shivapuri Nagarjun National Park</h4>
+                        <p>Located on the northern fringe of Kathmandu Valley, offering hiking and birdwatching opportunities.</p>
+                        <p><strong>Attractions:</strong> Hiking trails, diverse flora and fauna, Nagi Gompa, Shivapuri Peak</p>
+                        <a href="https://en.wikipedia.org/wiki/Shivapuri_Nagarjun_National_Park" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Koshi Tappu Wildlife Reserve</h4>
+                        <p>A paradise for birdwatchers and home to rare animals like wild water buffalo.</p>
+                        <p><strong>Wildlife:</strong> Over 485 bird species, wild buffalo, Gangetic dolphin, jackals</p>
+                        <a href="https://en.wikipedia.org/wiki/Koshi_Tappu_Wildlife_Reserve" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="spiritual">
+                <h3>Spiritual & Religious Sites</h3>
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Lumbini</h4>
+                        <p>Birthplace of Lord Buddha and a UNESCO World Heritage Site with numerous monasteries.</p>
+                        <p><strong>Major attractions:</strong> Maya Devi Temple, Ashoka Pillar, World Peace Pagoda, international monasteries</p>
+                        <a href="https://en.wikipedia.org/wiki/Lumbini" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Pashupatinath Temple</h4>
+                        <p>One of the most sacred Hindu temples dedicated to Lord Shiva, located on the banks of the Bagmati River.</p>
+                        <p><strong>Major attractions:</strong> Main temple complex, cremation ghats, Maha Shivaratri festival</p>
+                        <a href="https://en.wikipedia.org/wiki/Pashupatinath_Temple" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Boudhanath Stupa</h4>
+                        <p>One of the largest stupas in the world and an important center for Tibetan Buddhism.</p>
+                        <p><strong>Major attractions:</strong> The massive stupa, surrounding monasteries, prayer wheels, Losar festival</p>
+                        <a href="https://en.wikipedia.org/wiki/Boudhanath" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Muktinath Temple</h4>
+                        <p>A sacred site for both Hindus and Buddhists, located at an altitude of 3,710 meters.</p>
+                        <p><strong>Major attractions:</strong> The temple, 108 water spouts, eternal flame, stunning mountain views</p>
+                        <a href="https://en.wikipedia.org/wiki/Muktinath_Temple" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cost-estimator">
+            <h2>Trip Cost Estimator</h2>
+            <p>Plan your budget with our interactive cost estimator tool.</p>
+            
+            <div class="form-group">
+                <label for="duration">Trip Duration (days):</label>
+                <input type="number" id="duration" min="1" max="90" value="10">
+            </div>
+            
+            <div class="form-group">
+                <label for="accommodation">Preferred Accommodation:</label>
+                <select id="accommodation">
+                    <option value="budget">Budget (Hostels/Basic Guesthouses)</option>
+                    <option value="mid" selected>Mid-range (3-star hotels)</option>
+                    <option value="luxury">Luxury (4-5 star hotels)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="activities">Main Activities:</label>
+                <select id="activities">
+                    <option value="cultural">Cultural Sightseeing</option>
+                    <option value="trekking">Trekking & Hiking</option>
+                    <option value="adventure">Adventure Activities</option>
+                    <option value="wildlife">Wildlife & Nature</option>
+                    <option value="mixed" selected>Mix of Activities</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="travelers">Number of Travelers:</label>
+                <input type="number" id="travelers" min="1" max="20" value="2">
+            </div>
+            
+            <button class="btn" id="calculate-btn">Calculate Estimate</button>
+            
+            <div class="result" id="cost-result">
+                <h3>Estimated Cost Per Person</h3>
+                <p id="cost-estimate">$0 USD</p>
+                <p id="cost-breakdown"></p>
+                <p><small>Note: This is an approximate estimate and actual costs may vary based on season, specific accommodations, activities, and personal preferences.</small></p>
+            </div>
+        </section>
+        
+        <section class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is Nepal safe for tourists? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Nepal is generally considered a safe destination for tourists. As with any travel destination, it's advisable to take standard precautions. The Nepali people are known for their hospitality and friendliness toward visitors. For the latest safety information, check your country's travel advisory before your trip.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do I need special vaccines for Nepal? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>While there are no mandatory vaccinations required for entering Nepal, it's recommended to be up-to-date on routine vaccines like measles-mumps-rubella, diphtheria-tetanus-pertussis, varicella, and your yearly flu shot. Depending on your activities, hepatitis A, typhoid, hepatitis B, Japanese encephalitis, and rabies vaccines might be recommended. Consult with a travel medicine specialist before your trip.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What's the internet connectivity like in Nepal? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Internet connectivity is generally good in major cities like Kathmandu and Pokhara, with many hotels, restaurants, and cafes offering Wi-Fi. In trekking areas, connectivity becomes limited but is improving. You can purchase a local SIM card with a data plan at affordable prices. Network providers like Ncell and Nepal Telecom offer good coverage in most populated areas.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What currency is used in Nepal? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>The Nepalese Rupee (NPR) is the official currency. ATMs are widely available in major cities and tourist areas. Credit cards are accepted at higher-end establishments, but cash is preferred in most places. It's advisable to carry cash, especially when trekking or visiting remote areas. Currency exchange services are available at banks, hotels, and authorized money changers.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do I need a guide for trekking in Nepal? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>While it's not mandatory for all treks, hiring a licensed guide is highly recommended for safety, navigation, cultural insights, and supporting the local economy. Some restricted areas require guides by law. For popular routes like Annapurna Circuit or Everest Base Camp, the trails are well-marked, but a guide enhances the experience. For remote or challenging treks, a guide is essential for safety and navigation.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="culture" class="tabs">
+            <h2>Cultural Experiences</h2>
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="festivals">Festivals</button>
+                <button class="tab-btn" data-tab="cuisine">Nepali Cuisine</button>
+                <button class="tab-btn" data-tab="crafts">Arts & Crafts</button>
+                <button class="tab-btn" data-tab="customs">Local Customs</button>
+            </div>
+            
+            <div class="tab-content active" id="festivals">
+                <h3>Major Festivals of Nepal</h3>
+                <p>Nepal celebrates numerous vibrant festivals throughout the year. Here are some of the most significant ones:</p>
+                
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Dashain (September-October)</h4>
+                        <p>Nepal's biggest and most important festival celebrating the victory of good over evil. Families reunite, fly kites, set up swings, and receive blessings from elders.</p>
+                        <a href="https://en.wikipedia.org/wiki/Dashain" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Tihar/Diwali (October-November)</h4>
+                        <p>The festival of lights honoring Laxmi (goddess of wealth) and celebrating the bond between brothers and sisters. Houses are decorated with oil lamps and colorful rangoli patterns.</p>
+                        <a href="https://en.wikipedia.org/wiki/Tihar_(festival)" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Holi (February-March)</h4>
+                        <p>The festival of colors where people throw colored powders and water at each other. It celebrates the arrival of spring and the triumph of good over evil.</p>
+                        <a href="https://en.wikipedia.org/wiki/Holi" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Indra Jatra (August-September)</h4>
+                        <p>A spectacular festival in Kathmandu featuring the display of Kumari (living goddess), masked dances, and the erection of a ceremonial pole.</p>
+                        <a href="https://en.wikipedia.org/wiki/Yenya" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="cuisine">
+                <h3>Traditional Nepali Cuisine</h3>
+                <p>Nepali cuisine is a delightful blend of flavors influenced by its neighbors but with its own unique identity:</p>
+                
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Dal Bhat</h4>
+                        <p>The national dish consisting of steamed rice, lentil soup, and various curries, pickles, and vegetables. This staple meal provides a complete nutritional profile and is eaten twice daily by many Nepalis.</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Momos</h4>
+                        <p>Delicious dumplings filled with meat or vegetables, served with spicy dipping sauce. Found throughout Nepal, momos are a beloved street food and restaurant favorite.</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Newari Cuisine</h4>
+                        <p>The indigenous cuisine of the Kathmandu Valley featuring dishes like Bara (lentil pancakes), Chatamari (rice flour pizza), Choila (spiced meat), and Yomari (sweet dumplings).</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Thakali and Sherpa Cuisine</h4>
+                        <p>Mountain cuisines with hearty dishes like buckwheat pancakes, thukpa (noodle soup), and Sherpa stew, designed to provide energy in high-altitude environments.</p>
+                    </div>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Nepalese_cuisine" class="btn" target="_blank">Learn More About Nepali Food</a>
+            </div>
+            
+            <div class="tab-content" id="crafts">
+                <h3>Traditional Arts & Crafts</h3>
+                <p>Nepal has a rich tradition of artisanship passed down through generations:</p>
+                
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Thangka Painting</h4>
+                        <p>Intricate Buddhist paintings on cotton or silk depicting deities, mandalas, and religious scenes. These sacred artworks take months to create using traditional techniques and natural pigments.</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Wood Carving</h4>
+                        <p>Elaborate carvings adorn temples, palaces, and traditional homes. Newari artisans are particularly renowned for their intricate wooden sculptures and architectural elements.</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Metal Crafts</h4>
+                        <p>Statues of deities, singing bowls, and ritual objects crafted using the lost-wax casting method. Patan is famous for its skilled metal craftsmen who create exquisite bronze and copper items.</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Textiles</h4>
+                        <p>Traditional weaving, Dhaka fabric, pashmina, and felt products showcase Nepal's textile heritage. Each ethnic group has distinctive patterns and techniques for creating textiles used in daily life and ceremonies.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="customs">
+                <h3>Local Customs & Etiquette</h3>
+                <p>Understanding these customs will help you navigate Nepali culture respectfully:</p>
+                
+                <div class="seasons">
+                    <div class="season-card">
+                        <h4>Greetings</h4>
+                        <ul>
+                            <li>"Namaste" with palms together at chest level is the traditional greeting</li>
+                            <li>Slight bow shows extra respect to elders</li>
+                            <li>Avoid shaking hands, especially with the opposite gender</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Food Customs</h4>
+                        <ul>
+                            <li>Eat with your right hand when eating without utensils</li>
+                            <li>It's polite to be offered food multiple times before accepting</li>
+                            <li>Always wash hands before and after meals</li>
+                            <li>Refusing food can be considered impolite</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Home Visits</h4>
+                        <ul>
+                            <li>Remove shoes before entering homes</li>
+                            <li>A small gift is appreciated when visiting homes</li>
+                            <li>Accept tea or food offerings when provided</li>
+                            <li>Compliment the home and express gratitude</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="season-card">
+                        <h4>Sacred Places</h4>
+                        <ul>
+                            <li>Dress modestly at religious sites</li>
+                            <li>Walk clockwise around stupas and temples</li>
+                            <li>Don't point feet at people, shrines or images</li>
+                            <li>Ask permission before photographing ceremonies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section">
+            <h2>Need Help Planning Your Trip?</h2>
+            <p>Connect with local travel experts who can help customize your perfect Nepal adventure.</p>
+            
+            <div class="contact-buttons">
+                <a href="#" class="btn" id="show-contact-form">Contact a Travel Expert</a>
+                <a href="https://www.welcomenepal.com/" target="_blank" class="btn">Official Tourism Website</a>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab functionality
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    const parentTabContainer = this.closest('.tabs');
+                    
+                    // Remove active class from all buttons and contents in this tab group
+                    parentTabContainer.querySelectorAll('.tab-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    parentTabContainer.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Itinerary accordion functionality
+            const itineraryHeaders = document.querySelectorAll('.itinerary h4');
+            
+            itineraryHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const span = this.querySelector('span');
+                    
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        span.textContent = '+';
+                    } else {
+                        content.style.display = 'block';
+                        span.textContent = '-';
+                    }
+                });
+            });
+            
+            // FAQ accordion functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const span = this.querySelector('span');
+                    
+                    // Toggle the active class
+                    answer.classList.toggle('active');
+                    
+                    // Update the span content
+                    if (answer.classList.contains('active')) {
+                        span.textContent = '-';
+                    } else {
+                        span.textContent = '+';
+                    }
+                });
+            });
+            
+            // Scroll to sections smoothly
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Cost estimator functionality
+            const calculateButton = document.getElementById('calculate-btn');
+            
+            calculateButton.addEventListener('click', function() {
+                const duration = parseInt(document.getElementById('duration').value);
+                const accommodation = document.getElementById('accommodation').value;
+                const activities = document.getElementById('activities').value;
+                const travelers = parseInt(document.getElementById('travelers').value);
+                
+                // Base costs per day in USD
+                let accommodationCost = 0;
+                switch(accommodation) {
+                    case 'budget':
+                        accommodationCost = 15;
+                        break;
+                    case 'mid':
+                        accommodationCost = 50;
+                        break;
+                    case 'luxury':
+                        accommodationCost = 150;
+                        break;
+                }
+                
+                let activityCost = 0;
+                switch(activities) {
+                    case 'cultural':
+                        activityCost = 15;
+                        break;
+                    case 'trekking':
+                        activityCost = 30;
+                        break;
+                    case 'adventure':
+                        activityCost = 45;
+                        break;
+                    case 'wildlife':
+                        activityCost = 40;
+                        break;
+                    case 'mixed':
+                        activityCost = 35;
+                        break;
+                }
+                
+                // Fixed costs
+                const visaCost = duration <= 15 ? 30 : (duration <= 30 ? 50 : 125);
+                const transportCost = 15 * duration;
+                const foodCost = accommodation === 'luxury' ? 30 * duration : (accommodation === 'mid' ? 20 * duration : 10 * duration);
+                
+                // Calculate total cost
+                const totalCost = (accommodationCost * (duration*.7)) + (activityCost * duration) + visaCost + transportCost + foodCost;
+                
+                // Apply discount for larger groups
+                let groupDiscount = 1;
+                if (travelers >= 5) {
+                    groupDiscount = 0.8; // 20% discount
+                } else if (travelers >= 3) {
+                    groupDiscount = 0.9; // 10% discount
+                }
+                
+                const finalCost = Math.round(totalCost * groupDiscount);
+                
+                // Display results
+                document.getElementById('cost-estimate').textContent = `$${finalCost} USD`;
+                document.getElementById('cost-breakdown').innerHTML = `
+                    <p><strong>Accommodation:</strong> $${accommodationCost * duration}</p>
+                    <p><strong>Activities:</strong> $${activityCost * duration}</p>
+                    <p><strong>Visa:</strong> $${visaCost}</p>
+                    <p><strong>Transport:</strong> $${transportCost}</p>
+                    <p><strong>Food:</strong> $${foodCost}</p>
+                    ${travelers > 2 ? `<p><strong>Group Discount:</strong> ${(1-groupDiscount)*100}%</p>` : ''}
+                `;
+                
+                document.getElementById('cost-result').style.display = 'block';
+            });
+        });
+    </script>
+
+<div id="footer"></div>
+<script src="hfscript.js"></script>
+
+</body>
+</html>
+

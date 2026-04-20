@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+    <title>Festivals of Nepal - Beyond Everest</title>
+    <link rel="stylesheet" href="hfstyles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .banner { background: linear-gradient(rgba(29,53,87,0.8),rgba(29,53,87,0.9)), url('images/hero.jpg') center/cover no-repeat; } #back-to-top.visible { opacity: 1; visibility: visible; pointer-events: auto; }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="banner">
+        <div class="container">
+            <h1>Festivals of Nepal</h1>
+            <p>Immerse yourself in the vibrant cultural celebrations that define Nepal's rich heritage and spirituality. From the grandeur of Dashain to the lights of Tihar, discover the diverse festivals that showcase Nepal's unique traditions.</p>
+            <a href="#festivals" class="btn">Explore Festivals</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Featured Festival Section -->
+        <div class="featured-festival">
+            <div class="featured-img-container">
+                <img src="images/dashain1.png" alt="Upcoming Festival: Dashain Celebration">
+            </div>
+            <div class="featured-festival-content">
+                <span class="featured-label">Upcoming Festival</span>
+                <h2>Dashain 2025</h2>
+                <p>Nepal's biggest and most auspicious festival celebrating the victory of good over evil.</p>
+                
+                <div class="countdown">
+                    <div class="countdown-box">
+                        <span id="countdown-days">42</span>
+                        <small>Days</small>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="countdown-hours">18</span>
+                        <small>Hours</small>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="countdown-mins">33</span>
+                        <small>Minutes</small>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="countdown-secs">10</span>
+                        <small>Seconds</small>
+                    </div>
+                </div>
+                
+                <div class="featured-details">
+                    <p>Experience the 15-day celebration marking the triumph of Goddess Durga over the demon Mahishasura. From Ghatasthapana to Vijaya Dashami, witness ancient rituals, family reunions, and vibrant cultural expressions across Nepal.</p>
+                </div>
+                
+                <a href="#dashain-details" class="btn read-more" data-festival="dashain">Learn More About Dashain</a>
+            </div>
+        </div>
+
+        <!-- Calendar Section -->
+        <div class="calendar-section">
+            <h2>Nepali Festival Calendar 2025</h2>
+            <div class="calendar-grid">
+                <div class="calendar-month">
+                    <h3>January</h3>
+                    <div class="calendar-event">Maghe Sankranti (Jan 14)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>February</h3>
+                    <div class="calendar-event highlight">Losar (Feb 10-12)</div>
+                    <div class="calendar-event">Basanta Panchami (Feb 14)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>March</h3>
+                    <div class="calendar-event highlight">Holi (Mar 14)</div>
+                    <div class="calendar-event">Ghode Jatra (Mar 25)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>April</h3>
+                    <div class="calendar-event">Nepali New Year (Apr 13)</div>
+                    <div class="calendar-event">Bisket Jatra (Apr 10-17)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>May</h3>
+                    <div class="calendar-event">Buddha Jayanti (May 12)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>June</h3>
+                    <div class="calendar-event">Ropai Jatra (Jun 29)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>July</h3>
+                    <div class="calendar-event">Nag Panchami (Jul 20)</div>
+                    <div class="calendar-event">Guru Purnima (Jul 21)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>August</h3>
+                    <div class="calendar-event highlight">Janai Purnima (Aug 19)</div>
+                    <div class="calendar-event highlight">Teej (Aug 28-30)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>September</h3>
+                    <div class="calendar-event highlight">Indra Jatra (Sep 15-22)</div>
+                    <div class="calendar-event">Gai Jatra (Sep 3)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>October</h3>
+                    <div class="calendar-event highlight">Dashain (Oct 2-16)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>November</h3>
+                    <div class="calendar-event highlight">Tihar (Nov 10-14)</div>
+                    <div class="calendar-event">Chhath Puja (Nov 17-20)</div>
+                </div>
+                
+                <div class="calendar-month">
+                    <h3>December</h3>
+                    <div class="calendar-event">Yomari Punhi (Dec 15)</div>
+                    <div class="calendar-event">Tamu Losar (Dec 30)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Festival Grid -->
+        <h2 id="festivals" style="text-align: center; margin-bottom: 30px; color: var(--color-primary);">Major Festivals of Nepal</h2>
+        <div class="festivals-grid">
+            <div class="festival-card" id="dashain">
+                <img src="images/dashain.jpg" alt="Dashain Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>October (Kartik)</span>
+                        <span>15 Days</span>
+                    </div>
+                    <h3>Dashain Festival</h3>
+                    <p>Experience Nepal's biggest festival celebrating victory of good over evil with unique traditions.</p>
+                    <a href="#dashain-details" class="read-more" data-festival="dashain">Learn About Dashain</a>
+                </div>
+            </div>
+
+            <div class="festival-card" id="tihar">
+                <img src="images/tihar.png" alt="Tihar Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>October/November</span>
+                        <span>5 Days</span>
+                    </div>
+                    <h3>Tihar (Diwali)</h3>
+                    <p>The festival of lights honoring Goddess Laxmi, animals, and brotherly bonds with beautiful illuminations.</p>
+                    <a href="#tihar-details" class="read-more" data-festival="tihar">Learn About Tihar</a>
+                </div>
+            </div>
+
+            <div class="festival-card" id="holi">
+                <img src="images/holi.png" alt="Holi Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>March (Falgun/Chaitra)</span>
+                        <span>1-2 Days</span>
+                    </div>
+                    <h3>Holi</h3>
+                    <p>The colorful spring festival where people spray colored powders and water to celebrate the triumph of good.</p>
+                    <a href="#holi-details" class="read-more" data-festival="holi">Learn About Holi</a>
+                </div>
+            </div>
+
+            <div class="festival-card" id="losar">
+                <img src="images/loshar.png" alt="Losar Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>February/March</span>
+                        <span>3 Days</span>
+                    </div>
+                    <h3>Losar</h3>
+                    <p>Tibetan New Year celebrated by Sherpa, Tamang, and Tibetan communities with traditional ceremonies.</p>
+                    <a href="#losar-details" class="read-more" data-festival="losar">Learn About Losar</a>
+                </div>
+            </div>
+
+            <div class="festival-card" id="indra-jatra">
+                <img src="images/indra.png" alt="Indra Jatra Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>September (Bhadra/Ashwin)</span>
+                        <span>8 Days</span>
+                    </div>
+                    <h3>Indra Jatra</h3>
+                    <p>Kathmandu's most important street festival honoring rain god Indra with chariot processions and mask dances.</p>
+                    <a href="#indra-jatra-details" class="read-more" data-festival="indra-jatra">Learn About Indra Jatra</a>
+                </div>
+            </div>
+
+            <div class="festival-card" id="teej">
+                <img src="images/teej.png" alt="Teej Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>August/September</span>
+                        <span>3 Days</span>
+                    </div>
+                    <h3>Teej</h3>
+                    <p>Women's festival marked by fasting, dancing in red sarees, and prayers for marital happiness and prosperity.</p>
+                    <a href="#teej-details" class="read-more" data-festival="teej">Learn About Teej</a>
+                </div>
+            </div>
+            
+            <!-- New Festival Cards -->
+            <div class="festival-card" id="gai-jatra">
+                <img src="images/gai.png" alt="Gai Jatra Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>August/September</span>
+                        <span>1 Day</span>
+                    </div>
+                    <h3>Gai Jatra</h3>
+                    <p>A festival of cows that honors those who died in the previous year through humor, satire, and processions.</p>
+                    <a href="#gai-jatra-details" class="read-more" data-festival="gai-jatra">Learn About Gai Jatra</a>
+                </div>
+            </div>
+            
+            <div class="festival-card" id="mani-rimdu">
+                <img src="images/mani.png" alt="Mani Rimdu Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>October/November</span>
+                        <span>19 Days</span>
+                    </div>
+                    <h3>Mani Rimdu</h3>
+                    <p>Sacred Buddhist festival in the Everest region featuring colorful masked dances, mandalas, and fire ceremonies.</p>
+                    <a href="#mani-rimdu-details" class="read-more" data-festival="mani-rimdu">Learn About Mani Rimdu</a>
+                </div>
+            </div>
+            
+            <div class="festival-card" id="janai-purnima">
+                <img src="images/janai.png" alt="Janai Purnima Festival in Nepal">
+                <div class="festival-content">
+                    <div class="festival-meta">
+                        <span>August</span>
+                        <span>1 Day</span>
+                    </div>
+                    <h3>Janai Purnima</h3>
+                    <p>Sacred thread festival where Hindu men change their sacred threads and everyone ties colorful threads on their wrists.</p>
+                    <a href="#janai-purnima-details" class="read-more" data-festival="janai-purnima">Learn About Janai Purnima</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Festival Details Sections - Initially Hidden  CHANGING HERE TO HIDE IMAGES -->
+        <div id="dashain-details" class="festival-details" style="display: none;">
+            <h2>Dashain Festival</h2>
+            <img src="images/hero.jpg" alt="Dashain Festival Celebration in Nepal">
+            <p>Dashain is Nepal's longest and most auspicious festival, celebrated for 15 days during September-October. It symbolizes the victory of good over evil, specifically commemorating Goddess Durga's defeat of the demon Mahishasura.</p>
+            
+            <h3>Key Celebrations:</h3>
+            <ul>
+                <li><strong>Ghatasthapana (Day 1):</strong> The beginning of Dashain when barley seeds are sown in soil and sand mixture in a sacred spot in homes.</li>
+                <li><strong>Fulpati (Day 7):</strong> Sacred flowers, grasses, and twigs are brought from Gorkha to Kathmandu in a ceremonial procession.</li>
+                <li><strong>Maha Ashtami (Day 8):</strong> The fiercest day of goddess worship, when animal sacrifices traditionally take place.</li>
+                <li><strong>Maha Navami (Day 9):</strong> The last day of Navaratri with special military ceremonies and temple sacrifices.</li>
+                <li><strong>Vijaya Dashami (Day 10):</strong> The main celebration day when elders place tika (red vermilion mixed with rice and yogurt) on the foreheads of younger relatives and give blessings.</li>
+            </ul>
+            
+            <p>Dashain brings families together across Nepal, with people traveling from around the world to reunite with loved ones. The festival is characterized by kite flying, bamboo swings (ping), feasting, and new clothes. Public offices close for a week, and the atmosphere is festive throughout the country.</p>
+            
+            <h3>Cultural Significance:</h3>
+            <p>Beyond the religious ceremonies, Dashain represents renewal, family bonds, and community harmony. It marks a time for forgiveness, new beginnings, and acknowledging the triumph of virtue. The festival showcases Nepal's rich cultural traditions and reflects the deep religious devotion of its people.</p>
+            
+            <a href="#festivals" class="btn">Back to Festivals</a>
+        </div>
+
+        <div id="tihar-details" class="festival-details" style="display: none;">
+            <h2>Tihar (Festival of Lights)</h2>
+            <img src="images/hero.jpg" alt="Tihar Festival of Lights in Nepal">
+            <p>Tihar, also known as Deepawali or the Festival of Lights, is celebrated for five days in October/November. Unlike many festivals, Tihar honors both deities and animals that maintain a close relationship with humans.</p>
+            
+            <h3>Five Days of Tihar:</h3>
+            <ul>
+                <li><strong>Kaag Tihar (Day 1):</strong> Dedicated to crows, the messengers of Yama (god of death), who are fed sweet offerings.</li>
+                <li><strong>Kukur Tihar (Day 2):</strong> Dogs are worshipped and adorned with garlands, tika, and given special treats for their loyalty and service.</li>
+                <li><strong>Gai Tihar & Laxmi Puja (Day 3):</strong> Morning worship of cows, followed by evening veneration of Goddess Laxmi. Homes are illuminated with oil lamps and candles to welcome the goddess of wealth.</li>
+                <li><strong>Goru Tihar/Mha Puja (Day 4):</strong> Oxen are honored in some communities, while Newars celebrate Mha Puja (self-worship) and their New Year.</li>
+                <li><strong>Bhai Tika (Day 5):</strong> Sisters place colorful tikas on their brothers' foreheads, praying for their prosperity and long life, while brothers give gifts and promise protection.</li>
+            </ul>
+            
+            <p>Tihar transforms Nepal into a spectacular display of lights with oil lamps, candles, and electric lights adorning homes and businesses. The festival includes traditional music called Deusi and Bhailo, where groups sing from house to house and receive money, food, and blessings in return.</p>
+            
+            <h3>Unique Features:</h3>
+            <p>Tihar stands out for its inclusion of animal worship, recognition of human-animal bonds, and its beautiful illuminations. The rangoli (colorful floor designs) made from colored rice, flour, and flower petals add vibrant artistry to the celebration, making it one of Nepal's most visually stunning festivals.</p>
+            
+            <a href="#festivals" class="btn">Back to Festivals</a>
+        </div>
+
+        <div id="holi-details" class="festival-details" style="display: none;">
+            <h2>Holi - Festival of Colors</h2>
+            <img src="images/hero.jpg" alt="Holi Festival in Nepal">
+            <p>Holi, celebrated in March (Falgun/Chaitra), is one of Nepal's most playful and vibrant festivals. It marks the arrival of spring and celebrates the triumph of good over evil, specifically recalling the story of Holika and Prahlad from Hindu mythology.</p>
+            
+            <h3>Celebration Style:</h3>
+            <ul>
+                <li><strong>Colors and Water:</strong> People throw colored powders (abir) and spray colored water on friends, family, and even strangers in a joyful exchange.</li>
+                <li><strong>Regional Variations:</strong> In Kathmandu Valley, Holi is celebrated for one day, while in Terai regions, it lasts two days, beginning with Holika Dahan (bonfire).</li>
+                <li><strong>Community Gathering:</strong> People gather in public spaces, form musical processions, and visit homes of friends and relatives to share in the revelry.</li>
+            </ul>
+            
+            <p>While traditionally a Hindu festival, Holi in Nepal has transcended religious boundaries to become a celebration enjoyed by people of all faiths. It's particularly popular among young people who organize water fights and color parties.</p>
+            
+            <h3>Cultural Significance:</h3>
+            <p>Holi symbolizes the victory of devotion (Prahlad) over ego (Holika), the arrival of spring after winter, and the blossoming of love. The festival breaks down social barriers — during Holi, distinctions of age, gender, status, and caste temporarily dissolve in the shared joy of celebration. It's a time when people forget past grievances and renew relationships with a colorful embrace.</p>
+            
+            <a href="#festivals" class="btn">Back to Festivals</a>
+        </div>
+
+        <div id="losar-details" class="festival-details" style="display: none;">
+            <h2>Losar - Tibetan New Year</h2>
+            <img src="images/hero.jpg" alt="Losar Festival in Nepal">
+            <p>Losar marks the Tibetan New Year and is celebrated by Nepal's mountain communities including Sherpas, Tamangs, and Tibetans. Observed for three days in February/March, it combines ancient Bon traditions with Buddhist practices.</p>
+            
+            <h3>Key Celebrations:</h3>
+            <ul>
+                <li><strong>Preparation (Gutor):</strong> In the days before Losar, homes are thoroughly cleaned, and special food items are prepared, including Guthuk (dumpling soup) and Khapse (deep-fried pastries).</li>
+                <li><strong>Day One (Lama Losar):</strong> Focused on religious ceremonies at monasteries and homes, with offerings to deities and spiritual teachers.</li>
+                <li><strong>Day Two (Gyalpo Losar):</strong> The king's Losar, devoted to community celebrations and secular gatherings.</li>
+                <li><strong>Day Three:</strong> Dedicated to visiting friends and family, exchanging greetings and gifts.</li>
+            </ul>
+            
+            <p>Losar festivities feature colorful prayer flags, butter sculptures, masked dances at monasteries, and the creation of torma (ritual cake offerings). Communities gather to perform traditional dances, share meals, and participate in various games and competitions.</p>
+            
+            <h3>Cultural Significance:</h3>
+            <p>Losar represents purification and fresh beginnings. The festivities reflect the deep Buddhist influences in Nepal's mountain regions and showcase the unique cultural heritage of these communities. This celebration emphasizes harmony within families and communities while renewing spiritual commitments for the coming year.</p>
+            
+            <a href="#festivals" class="btn">Back to Festivals</a>
+        </div>
+
+        <!-- Photo Gallery Section -->
+        <div class="gallery-section">
+            <h2>Festival Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/tika.png" alt="Dashain Celebration">
+                    <div class="gallery-caption">Dashain tika ceremony in a Nepali family</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tiharl.png" alt="Tihar Lights">
+                    <div class="gallery-caption">Home decorated with lights during Tihar festival</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/holi1.png" alt="Holi Colors">
+                    <div class="gallery-caption">Young people celebrating Holi with vibrant colors</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/loshar1.png" alt="Losar Ceremony">
+                    <div class="gallery-caption">Monks performing rituals during Losar</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/kum.png" alt="Indra Jatra">
+                    <div class="gallery-caption">Kumari chariot procession at Indra Jatra</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/teej.png" alt="Teej Festival">
+                    <div class="gallery-caption">Women in red sarees celebrating Teej</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Festival Etiquette Section -->
+        <div class="etiquette-section">
+            <h2>Festival Etiquette for Visitors</h2>
+            <div class="etiquette-grid">
+                <div class="etiquette-card">
+                    <h3>Dress Appropriately</h3>
+                    <p>Wear modest clothing when visiting temples or participating in religious ceremonies. Cover shoulders and knees, and be prepared to remove shoes at religious sites.</p>
+                </div>
+                <div class="etiquette-card">
+                    <h3>Ask Before Photographing</h3>
+                    <p>Always ask permission before taking photos of ceremonies, rituals, or people in traditional dress. Some ceremonies may prohibit photography.</p>
+                </div>
+                <div class="etiquette-card">
+                    <h3>Respect Sacred Objects</h3>
+                    <p>Don't touch religious objects, offerings, or ceremonial items unless invited to do so by a local participant.</p>
+                </div>
+                <div class="etiquette-card">
+                    <h3>Follow Local Customs</h3>
+                    <p>Observe how locals behave and follow their lead. During Holi, for example, wear clothes you don't mind getting colored.</p>
+                </div>
+                <div class="etiquette-card">
+                    <h3>Eat with Right Hand</h3>
+                    <p>If offered festival food, eat using your right hand as the left hand is considered unclean in Nepali culture.</p>
+                </div>
+                <div class="etiquette-card">
+                    <h3>Be Mindful of Space</h3>
+                    <p>During crowded festivals, be respectful of locals who are there for religious purposes rather than tourism.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Experiences Section -->
+        <div class="related-experiences">
+            <h2>Related Cultural Experiences</h2>
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <img src="images/dance.png" alt="Traditional Nepali Dance">
+                    <div class="experience-overlay">
+                        <h3>Cultural Dance Performances</h3>
+                        <p>Experience traditional Nepali dances showcasing stories from mythology and history.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <img src="images/selroti.jpg" alt="Nepali Cuisine">
+                    <div class="experience-overlay">
+                        <h3>Festival Food Tours</h3>
+                        <p>Taste special dishes prepared only during festival seasons across Nepal.</p>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <img src="images/craft.png" alt="Artisan Crafts">
+                    <div class="experience-overlay">
+                        <h3>Traditional Craft Workshops</h3>
+                        <p>Learn to create festival decorations, masks, and religious art from local artisans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plan Your Visit Section -->
+        <div class="plan-visit">
+            <div class="container">
+                <h2>Plan Your Festival Visit</h2>
+                <p>Make the most of your journey to experience Nepal's vibrant festivals with these helpful tips and resources.</p>
+                
+                <div class="travel-tips">
+                    <div class="tip-card">
+                        <h3>Best Time to Visit</h3>
+                        <p>October-November offers the most significant festivals (Dashain and Tihar) with pleasant weather. March-April features colorful spring celebrations including Holi.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Accommodation</h3>
+                        <p>Book accommodations well in advance for major festivals, especially in Kathmandu Valley. Consider homestays for an authentic festival experience with local families.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Transportation</h3>
+                        <p>Public transportation is limited during major festivals. Consider hiring private vehicles or joining organized tours during peak festival times.</p>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn">Contact a Festival Travel Specialist</a>
+            </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter">
+            <h3>Stay Updated on Nepal's Festivals</h3>
+            <p>Subscribe to our newsletter for festival dates, cultural insights, and travel tips to experience Nepal's vibrant celebrations.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" id="back-to-top">â†‘</a>
+
+    <div id="footer"></div>
+    <script src="hfscript.js"></script>
+    <script>
+        // Show/hide festival details
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Hide all festival details first
+                document.querySelectorAll('.festival-details').forEach(detail => {
+                    detail.style.display = 'none';
+                });
+                
+                // Show the selected festival details
+                const festivalId = this.getAttribute('href');
+                document.querySelector(festivalId).style.display = 'block';
+                
+                // Scroll to the details
+                document.querySelector(festivalId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const festivalDate = new Date('2025-10-02T00:00:00');
+            const now = new Date();
+            
+            const difference = festivalDate - now;
+            
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-days').innerText = days;
+            document.getElementById('countdown-hours').innerText = hours;
+            document.getElementById('countdown-mins').innerText = minutes;
+            document.getElementById('countdown-secs').innerText = seconds;
+        }
+        
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
+
+
+

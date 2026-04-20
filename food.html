@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+    <title>Nepalese Cuisine - Beyond Everest</title>
+    <link rel="stylesheet" href="hfstyles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Page-specific: food card flex layout */
+        .food-card { display: flex; flex-direction: column; }
+        .food-info { flex-grow: 1; display: flex; flex-direction: column; }
+        .food-info p { flex-grow: 1; }
+        /* food hero gradient */
+        .hero { background: linear-gradient(135deg, #1d3557 0%, #0f2540 60%, #1a0505 100%); }
+        /* Festival item flex fallback */
+        .festivals .festival-item { display: grid; }
+        .ingredients { border-radius: var(--radius-xl); }
+        /* Fix accordion header style (food page uses blue bg) */
+        .accordion-header { background: var(--color-secondary); color: #fff; }
+        [data-theme="dark"] .accordion-header { background: var(--color-bg-muted); color: var(--color-text); }
+        .accordion-header h3 { color: #fff; }
+        [data-theme="dark"] .accordion-header h3 { color: var(--color-text); }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="hero">
+        <div class="container">
+            <h1>Nepalese Cuisine: A Culinary Journey</h1>
+            <p>Discover the rich flavors, traditional dishes, and cultural significance of food in Nepal</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="intro">
+            <h2 class="section-title">Explore Nepal Through Its Food</h2>
+            <p>Nepalese cuisine is as diverse as its landscapes and cultures. From the momos of the Himalayan regions to the spicy curries of the Terai plains, food in Nepal tells the story of its people, geography, and history. Influenced by neighboring countries like India, Tibet, and China, yet distinctly its own, Nepalese food offers a unique culinary adventure for travelers seeking authentic flavors.</p>
+        </section>
+
+        <section class="popular-foods">
+            <h2 class="section-title">Popular Nepalese Dishes</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/dalbhat.png" alt="Dal Bhat - Traditional Nepalese meal">
+                    </div>
+                    <div class="food-info">
+                        <h3>Dal Bhat</h3>
+                        <p>The national dish of Nepal consisting of steamed rice, lentil soup, and various curries and pickles. This complete meal is the staple food for most Nepali people and is typically eaten twice a day.</p>
+                        <a href="https://en.wikipedia.org/wiki/Dal_bhat" class="food-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/momo.jpeg" alt="Momos - Nepalese dumplings">
+                    </div>
+                    <div class="food-info">
+                        <h3>Momos</h3>
+                        <p>These steamed or fried dumplings are stuffed with seasoned meat or vegetables and served with spicy dipping sauce. Originally from Tibet, momos have become one of Nepal's most beloved street foods.</p>
+                        <a href="https://en.wikipedia.org/wiki/Momo_(food)" class="food-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/selroti.jpg" alt="Sel Roti - Sweet rice bread">
+                    </div>
+                    <div class="food-info">
+                        <h3>Sel Roti</h3>
+                        <p>A traditional homemade sweet rice bread that's ring-shaped and crispy on the outside, soft inside. Often prepared during festivals like Tihar and Dashain, this delicacy has deep cultural significance.</p>
+                        <a href="https://en.wikipedia.org/wiki/Sel_roti" class="food-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/thupka.png" alt="Thukpa - Tibetan noodle soup">
+                    </div>
+                    <div class="food-info">
+                        <h3>Thukpa</h3>
+                        <p>A hearty noodle soup with vegetables and meat, popular in the Himalayan regions. This warming dish is perfect for cold mountain days and showcases the Tibetan influence on Nepalese cuisine.</p>
+                        <a href="https://en.wikipedia.org/wiki/Thukpa" class="food-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/newari-food.jpg" alt="Newari Khaja Set - Traditional feast">
+                    </div>
+                    <div class="food-info">
+                        <h3>Newari Khaja Set</h3>
+                        <p>A traditional feast from the Newari community featuring beaten rice, spicy meat, soybeans, and various small dishes. This elaborate meal showcases the sophisticated culinary traditions of Kathmandu Valley.</p>
+                        <a href="https://en.wikipedia.org/wiki/Newa_cuisine" class="food-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/gundruk.png" alt="Gundruk - Fermented leafy greens">
+                    </div>
+                    <div class="food-info">
+                        <h3>Gundruk</h3>
+                        <p>A fermented leafy green vegetable that is one of Nepal's national dishes. Often made into soup or pickle, gundruk is rich in nutrients and represents Nepal's tradition of food preservation.</p>
+                        <a href="https://en.wikipedia.org/wiki/Gundruk" class="food-link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="regions">
+            <h2 class="section-title">Regional Cuisines of Nepal</h2>
+            <div class="region-tab">
+                <button class="tab-btn active" data-tab="himalayan">Himalayan Region</button>
+                <button class="tab-btn" data-tab="kathmandu">Kathmandu Valley</button>
+                <button class="tab-btn" data-tab="terai">Terai Region</button>
+            </div>
+
+            <div class="region-content active" id="himalayan">
+                <h3>Himalayan Region Cuisine</h3>
+                <p>The cuisine of Nepal's northern mountain regions is heavily influenced by Tibetan culture. The harsh climate and limited agriculture have shaped a diet rich in barley, buckwheat, and dairy products. Popular dishes include:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Tsampa:</strong> Roasted barley flour, often mixed with butter tea</li>
+                    <li><strong>Thukpa:</strong> Hearty noodle soup with vegetables and meat</li>
+                    <li><strong>Sha Phaley:</strong> Fried bread stuffed with seasoned meat</li>
+                    <li><strong>Butter Tea:</strong> Salty tea mixed with yak butter, providing necessary calories for high-altitude living</li>
+                </ul>
+                <div class="food-image" style="margin-top: 20px;">
+                    <img src="images/himfood.png" alt="Himalayan cuisine featuring Thukpa and other dishes">
+                </div>
+            </div>
+
+            <div class="region-content" id="kathmandu">
+                <h3>Kathmandu Valley Cuisine</h3>
+                <p>The indigenous Newari community of Kathmandu Valley has one of Nepal's most sophisticated culinary traditions. Their cuisine features complex flavors, intricate preparation methods, and numerous festive dishes:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Yomari:</strong> Steamed rice flour dumplings with sweet fillings</li>
+                    <li><strong>Choila:</strong> Spicy grilled meat, typically buffalo or chicken</li>
+                    <li><strong>Bara:</strong> Lentil pancakes often topped with an egg</li>
+                    <li><strong>Juju Dhau:</strong> "King of yogurts" - a rich, creamy yogurt made in Bhaktapur</li>
+                </ul>
+                <div class="food-image" style="margin-top: 20px;">
+                    <img src="images/newari-food.jpg" alt="Traditional Newari feast with various dishes">
+                </div>
+            </div>
+
+            <div class="region-content" id="terai">
+                <h3>Terai Region Cuisine</h3>
+                <p>The southern plains of Nepal share culinary traditions with northern India. The fertile land allows for abundant rice cultivation and a variety of vegetables. The cuisine here tends to be:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Dhido:</strong> A thick porridge made from millet or buckwheat flour</li>
+                    <li><strong>Fish Curry:</strong> Various freshwater fish prepared with local spices</li>
+                    <li><strong>Ghonghi:</strong> Edible snails cooked in a spicy sauce</li>
+                    <li><strong>Bagiya:</strong> Rice flour cakes steamed in leaves</li>
+                </ul>
+                <div class="food-image" style="margin-top: 20px;">
+                    <img src="images/terfood.png" alt="Terai region dishes including fish curry and rice">
+                </div>
+            </div>
+        </section>
+
+        <section class="ingredients">
+            <h2 class="section-title">Essential Ingredients</h2>
+            <p class="intro" style="margin-bottom: 30px;">Nepalese cuisine uses a distinctive set of spices and ingredients that give it its unique flavor profile:</p>
+            
+            <div class="ingredient-grid">
+                <div class="ingredient-item">
+                    <h4>Jimbu</h4>
+                    <p>A herb native to the Himalayan region that adds a unique flavor similar to onion and chives.</p>
+                </div>
+                <div class="ingredient-item">
+                    <h4>Timur</h4>
+                    <p>Nepali pepper with a citrusy, numbing quality similar to Sichuan pepper.</p>
+                </div>
+                <div class="ingredient-item">
+                    <h4>Ghee</h4>
+                    <p>Clarified butter used for cooking and religious purposes.</p>
+                </div>
+                <div class="ingredient-item">
+                    <h4>Mustard Oil</h4>
+                    <p>The primary cooking oil in many Nepalese dishes, adding a distinctive pungent flavor.</p>
+                </div>
+                <div class="ingredient-item">
+                    <h4>Cumin</h4>
+                    <p>Essential spice in many Nepalese dishes, especially in curries and lentils.</p>
+                </div>
+                <div class="ingredient-item">
+                    <h4>Achar</h4>
+                    <p>Spicy pickles made from various vegetables, fruits, or meats.</p>
+                </div>
+                <div class="ingredient-item">
+                    <h4>Yak Cheese</h4>
+                    <p>Hard cheese from the Himalayan regions, providing protein and nutrients.</p>
+                </div>
+                <div class="ingredient-item">
+                    <h4>Buckwheat</h4>
+                    <p>Important grain in higher elevations where rice cannot be grown.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="festivals">
+            <h2 class="section-title">Food & Festivals</h2>
+            <div class="festival-item">
+                <div class="festival-image">
+                    <img src="images/dasmeal.png" alt="Dashain festival food">
+                </div>
+                <div class="festival-info">
+                    <h3>Dashain</h3>
+                    <p>Nepal's biggest festival features special foods like goat curry, sel roti (sweet rice bread rings), and various meat dishes. Families gather for feasts that last several days, with special emphasis on meat dishes that are only prepared during this auspicious time.</p>
+                    <p>During Dashain, kitchen activities increase dramatically as women prepare elaborate dishes and sweets. The festival is also associated with jamara (barley sprouts) that are used in religious ceremonies.</p>
+                    <a href="https://en.wikipedia.org/wiki/Dashain" class="food-link" target="_blank">Learn About Dashain</a>
+                </div>
+            </div>
+
+            <div class="festival-item">
+                <div class="festival-image">
+                    <img src="images/sweets.png" alt="Tihar festival sweets">
+                </div>
+                <div class="festival-info">
+                    <h3>Tihar</h3>
+                    <p>Also known as the festival of lights, Tihar celebrations include preparing sel roti, various milk-based sweets, and traditional treats like anarsa (rice flour cookies). Each day of this five-day festival has specific food offerings associated with it.</p>
+                    <p>Sweets play an important role in Tihar, with families exchanging homemade delicacies as gifts. The preparation of these traditional sweets is itself considered a sacred activity.</p>
+                    <a href="https://en.wikipedia.org/wiki/Tihar_(festival)" class="food-link" target="_blank">Learn About Tihar</a>
+                </div>
+            </div>
+
+            <div class="festival-item">
+                <div class="festival-image">
+                    <img src="images/yomari.png" alt="Yomari Punhi celebration">
+                </div>
+                <div class="festival-info">
+                    <h3>Yomari Punhi</h3>
+                    <p>A Newari festival celebrating the end of the rice harvest, centered around yomari - a steamed dumpling with sweet fillings made from rice flour. The unique fish-shaped dumplings are filled with molasses and sesame seeds or khuwa (condensed milk).</p>
+                    <p>Making yomari is considered an art, with the shape representing the fish of abundance and prosperity. Families gather to make these treats together, passing down traditional techniques through generations.</p>
+                    <a href="https://en.wikipedia.org/wiki/Yomari_Punhi" class="food-link" target="_blank">Learn About Yomari Punhi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="accordion">
+            <h2 class="section-title">Nepalese Food Culture</h2>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Eating Customs & Etiquette</h3>
+                    <span class="accordion-arrow">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Traditional Nepalese eating customs include:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Eating with the right hand, as the left is considered unclean</li>
+                            <li>Sitting cross-legged on the floor around low tables or mats</li>
+                            <li>Washing hands before and after meals</li>
+                            <li>Taking food from communal plates with the fingers or personal spoons</li>
+                            <li>In traditional households, men eat first, followed by women and children</li>
+                            <li>Declining food at least once before accepting (as a sign of politeness)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Religious Food Practices</h3>
+                    <span class="accordion-arrow">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Food practices in Nepal are deeply influenced by religious beliefs:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Many Hindus avoid beef as cows are considered sacred</li>
+                            <li>Buddhist practitioners may follow vegetarian diets, especially during religious ceremonies</li>
+                            <li>Fasting is common during religious festivals and certain days of the week</li>
+                            <li>Prasad (blessed food) is distributed after religious ceremonies</li>
+                            <li>Certain foods are prepared exclusively for religious offerings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Cooking Methods</h3>
+                    <span class="accordion-arrow">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Traditional Nepalese cooking methods include:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Cooking over wood fires using clay or metal stoves</li>
+                            <li>Pressure cooking for lentils and beans</li>
+                            <li>Fermentation for preserving vegetables (like gundruk)</li>
+                            <li>Sun-drying meat, vegetables, and fruits for preservation</li>
+                            <li>Steaming in leaves or special vessels (for momos and other dumplings)</li>
+                            <li>Using grinding stones to prepare spice mixtures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3>Street Food Culture</h3>
+                    <span class="accordion-arrow">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Nepal has a vibrant street food scene, especially in urban areas:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Momos (dumplings) stalls are ubiquitous in cities</li>
+                            <li>Chatamari (Newari rice pizzas) served from small food carts</li>
+                            <li>Samosas and other fried snacks are popular afternoon treats</li>
+                            <li>Lassi (yogurt drink) stalls during hot weather</li>
+                            <li>Pani puri and chaat influenced by Indian street food</li>
+                            <li>Seasonal specialties like boiled corn, roasted sweet potatoes, and fresh sugarcane juice</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="beverages">
+            <h2 class="section-title">Traditional Beverages</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/chiya.png" alt="Chiya - Nepali tea">
+                    </div>
+                    <div class="food-info">
+                        <h3>Chiya</h3>
+                        <p>Spiced milk tea similar to Indian chai, flavored with cardamom, cinnamon, and other spices. This ubiquitous drink is served throughout the day in Nepal.</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/tongba.png" alt="Tongba - Millet beer0">
+                    </div>
+                    <div class="food-info">
+                        <h3>Tongba</h3>
+                        <p>A warm millet beer consumed primarily in eastern Nepal and among Limbu communities. Fermented millet is placed in a container and hot water is added.</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/raksi.png" alt="Raksi - Traditional spirit">
+                    </div>
+                    <div class="food-info">
+                        <h3>Raksi</h3>
+                        <p>A strong home-brewed distilled alcohol made from millet or rice. Often served during special occasions and festivals.</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="images/buttea.png" alt="Butter Tea - Himalayan specialty">
+                    </div>
+                    <div class="food-info">
+                        <h3>Butter Tea</h3>
+                        <p>Popular in the Himalayan regions, this tea is made with yak butter and salt, providing necessary calories for high-altitude living.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Experience Nepalese Cuisine?</h2>
+            <p>Whether you're planning a trip to Nepal or looking to explore new flavors at home, Nepalese food offers a delightful and enriching experience. Find local Nepalese restaurants or try cooking some of these dishes yourself!</p>
+            <a href="#" class="cta-btn">Find a Local Restaurant</a>
+            <a href="#" class="cta-btn">Explore Recipes</a>
+        </section>
+    </div>
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const regionContents = document.querySelectorAll('.region-content');
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                regionContents.forEach(content => content.classList.remove('active'));
+
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentNode;
+                accordionItem.classList.toggle('active');
+
+                const content = header.nextElementSibling;
+                if (accordionItem.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = 0;
+                }
+
+                const arrow = header.querySelector('.accordion-arrow');
+                arrow.textContent = accordionItem.classList.contains('active') ? '▲' : '▼';
+            });
+        });
+    </script>
+
+    <div id="footer"></div>
+    <script src="hfscript.js"></script>
+</body>
+</html>

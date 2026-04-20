@@ -1,0 +1,973 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture & Traditions | Beyond Everest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="culture.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Beyond Everest Logo" class="logo">
+            <h1>Beyond Everest</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Culture <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="culture.html" class="active">Culture & Traditions</a></li>
+                        <li><a href="food.html">Nepali Cuisine</a></li>
+                        <li><a href="festivals.html">Festivals</a></li>
+                        <li><a href="dresses.html">Traditional Attire</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mountains.html">Mountains</a></li>
+                        <li><a href="cities.html">Cities</a></li>
+                        <li><a href="temples.html">Temples</a></li>
+                        <li><a href="lakes.html">Lakes & Rivers</a></li>
+                        <li><a href="parks.html">National Parks</a></li>
+                        <li><a href="hidden-gems.html">Hidden Gems</a></li>
+                        <li><a href="heritage.html">UNESCO World Heritage</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Activities <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="trekking.html">Trekking Routes</a></li>
+                        <li><a href="adventure.html">Adventure Sports</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Travel Info <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="travel-guide.html">Travel Guide</a></li>
+                        <li><a href="plan.html">Plan Your Trip</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <div class="hero-section culture-hero">
+        <div class="hero-content">
+            <h1>Nepali Culture & Traditions</h1>
+            <p>Discover the rich cultural tapestry of Nepal, where ancient traditions meet vibrant modern practices</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="culture-intro">
+            <div class="container">
+                <h2>The Cultural Mosaic of Nepal</h2>
+                <p>Nepal is a land of extraordinary cultural diversity, home to over 125 distinct ethnic groups, each with their own unique traditions, languages, and customs. From the Himalayan heights to the southern plains, the country's rich cultural tapestry has been woven over thousands of years, influenced by both Hindu and Buddhist traditions as well as indigenous practices.</p>
+                <p>As you explore Nepal, you'll encounter a living heritage that continues to thrive in daily life, festivals, art, music, and spiritual practices. This page offers a glimpse into the cultural wonders that make Nepal truly special.</p>
+            </div>
+        </section>
+
+        <section class="culture-grid">
+            <div class="container">
+                <div class="grid-item">
+                    <img src="images/culture/religions.jpg" alt="Religious practices in Nepal">
+                    <div class="grid-content">
+                        <h3>Religious Harmony</h3>
+                        <p>Nepal is where Hinduism and Buddhism have coexisted harmoniously for centuries. Many sacred sites are revered by both religions, and Nepalis often participate in each other's ceremonies regardless of their personal faith.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/culture/kumari.jpg" alt="Kumari - The Living Goddess">
+                    <div class="grid-content">
+                        <h3>The Living Goddess Tradition</h3>
+                        <p>The Kumari tradition represents one of Nepal's most unique cultural practices. Young girls selected as living embodiments of divine female energy are worshipped until they reach puberty, acting as a living link between the heavenly and earthly realms.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/culture/magar.jpg" alt="Magar community traditional dance">
+                    <div class="grid-content">
+                        <h3>Ethnic Diversity</h3>
+                        <p>From the Sherpas of the high Himalayas to the Tharus of the Terai plains, Nepal's ethnic groups maintain distinct identities through language, dress, architecture, and social customs while contributing to a unified national identity.</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/culture/singing-bowls.jpg" alt="Traditional Singing Bowls">
+                    <div class="grid-content">
+                        <h3>Artisan Traditions</h3>
+                        <p>Nepalese craftsmanship is renowned worldwide, from intricate thangka paintings and wood carvings to metal work, pottery, and textiles. These skills are passed down through generations, preserving ancient techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="daily-life">
+            <div class="container">
+                <h2>Daily Life & Social Customs</h2>
+                <div class="dual-content">
+                    <div class="text-content">
+                        <h3>Greeting Customs</h3>
+                        <p>The traditional Nepali greeting is "Namaste" (or "Namaskar" for more formal occasions), performed by pressing palms together in front of the chest with a slight bow. This greeting acknowledges the divine in each person.</p>
+                        
+                        <h3>Family Structure</h3>
+                        <p>Nepali society is traditionally family-centered, with multiple generations often living under one roof. Elders are highly respected, and important decisions are typically made as a family unit.</p>
+                        
+                        <h3>Hospitality</h3>
+                        <p>Guests are considered akin to gods in Nepali culture. Even in the most humble homes, visitors will be offered tea and whatever food is available as a sign of respect and welcome.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/culture/daily-life.jpg" alt="Daily life in a Nepali village">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cultural-practices">
+            <div class="container">
+                <h2>Cultural Practices</h2>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>Morning Rituals</h3>
+                    <p>Many Nepali families begin their day with puja (prayer), offering flowers, incense, and food to household deities before starting their daily activities.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Lunar Calendar</h3>
+                    <p>The traditional Nepali calendar (Bikram Sambat) is lunar-based and approximately 56.7 years ahead of the Gregorian calendar. Most festivals and auspicious dates are determined by this calendar.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Caste System</h3>
+                    <p>Though legally abolished, aspects of the caste system still influence social structures in Nepal. However, modern urbanization and education are gradually diminishing these traditional divisions.</p>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Traditions</h3>
+                    <p>Food rituals are important in Nepali culture. Eating with the right hand, sharing prasad (blessed food) after ceremonies, and specific foods for different occasions are integral practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-dance">
+            <div class="container">
+                <h2>Music & Dance Traditions</h2>
+                <div class="media-container">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/exampleID" title="Traditional Nepali Dance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="music-content">
+                        <p>Nepal's cultural expression through music and dance varies widely across ethnic groups. From the Tamang Selo of the hills to the Tharu Stick Dance of the plains, each tradition tells stories of community life, historical events, or spiritual devotion.</p>
+                        <p>Traditional instruments include the sarangi (string instrument), madal (drum), bansuri (flute), and damaha (large drum). In the Kathmandu Valley, the classical Newari dances such as Lakhey and Mahakali have been performed for centuries during festivals.</p>
+                        <a href="#" class="btn">Learn More About Traditional Arts</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cultural-sites">
+            <div class="container">
+                <h2>Cultural Heritage Sites</h2>
+                <div class="site-cards">
+                    <div class="site-card">
+                        <img src="images/culture/pashupatinath.jpg" alt="Pashupatinath Temple">
+                        <h3>Pashupatinath Temple</h3>
+                        <p>Nepal's most sacred Hindu temple complex, dedicated to Lord Shiva, where cultural and spiritual practices can be observed daily.</p>
+                        <a href="#" class="btn btn-sm">Visit</a>
+                    </div>
+                    <div class="site-card">
+                        <img src="images/culture/boudhanath.jpg" alt="Boudhanath Stupa">
+                        <h3>Boudhanath Stupa</h3>
+                        <p>One of the largest spherical stupas in Nepal, the center of Tibetan Buddhism in Kathmandu and a UNESCO World Heritage site.</p>
+                        <a href="#" class="btn btn-sm">Visit</a>
+                    </div>
+                    <div class="site-card">
+                        <img src="images/culture/bhaktapur.jpg" alt="Bhaktapur Durbar Square">
+                        <h3>Bhaktapur Durbar Square</h3>
+                        <p>An open museum of medieval art and architecture showcasing the rich cultural heritage of the Newari people.</p>
+                        <a href="#" class="btn btn-sm">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="culture-testimonials">
+            <div class="container">
+                <h2>Cultural Experiences</h2>
+                <div class="testimonials-carousel">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Participating in a traditional Nepali wedding ceremony was the highlight of my visit. The rituals, colors, and warm hospitality gave me insights into family values that I'll never forget."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonials/sarah.jpg" alt="Sarah Johnson">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Cultural Anthropologist, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"My homestay with a Tharu family in Chitwan showed me a side of Nepal most tourists never see. Learning to cook traditional dishes and joining their evening dancing was magical."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonials/miguel.jpg" alt="Miguel Fernandez">
+                                <div>
+                                    <h4>Miguel Fernandez</h4>
+                                    <p>Food Blogger, Spain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-experiences">
+            <div class="container">
+                <h2>Experience Nepali Culture</h2>
+                <div class="experiences-grid">
+                    <div class="experience-card">
+                        <img src="images/culture/cooking-class.jpg" alt="Nepali Cooking Class">
+                        <h3>Cooking Classes</h3>
+                        <p>Learn to prepare authentic Nepali dishes with local ingredients and traditional methods.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                    <div class="experience-card">
+                        <img src="images/culture/homestay.jpg" alt="Rural Homestay">
+                        <h3>Village Homestays</h3>
+                        <p>Live with local families in rural Nepal and participate in their daily cultural practices.</p>
+                        <a href="#" class="btn">Find Homestays</a>
+                    </div>
+                    <div class="experience-card">
+                        <img src="images/culture/festival-tour.jpg" alt="Festival Tour">
+                        <h3>Festival Tours</h3>
+                        <p>Plan your visit around Nepal's vibrant festivals for an immersive cultural experience.</p>
+                        <a href="#" class="btn">View Calendar</a>
+                    </div>
+                    <div class="experience-card">
+                        <img src="images/culture/craft-workshop.jpg" alt="Craft Workshop">
+                        <h3>Craft Workshops</h3>
+                        <p>Try your hand at traditional Nepali crafts like pottery, weaving, or thangka painting.</p>
+                        <a href="#" class="btn">Book Workshop</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience Nepal's Culture?</h2>
+            <p>Discover how our customized cultural tours can help you experience authentic Nepali traditions</p>
+            <a href="plan.html" class="btn btn-lg">Plan Your Cultural Journey</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Beyond Everest</h3>
+                <p>Your gateway to the cultural and natural wonders of Nepal, offering authentic travel experiences beyond the ordinary.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates on travel tips and cultural events</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Beyond Everest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+/*
+
+
+
+----------------------------------------------
+
+
+
+/* Culture & Traditions Page Specific Styles */
+
+/* Culture & Traditions Page Specific Styles */
+
+/* Hero Section Styling */
+.culture-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/culture/culture-hero.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+/* Introduction Section */
+.culture-intro {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.culture-intro h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.culture-intro h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.culture-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Culture Grid Section */
+.culture-grid {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.culture-grid .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.grid-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.grid-content {
+    padding: 20px;
+}
+
+.grid-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.grid-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Daily Life Section */
+.daily-life {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+.daily-life h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.daily-life h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dual-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.text-content h3:first-child {
+    margin-top: 0;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Cultural Practices Section */
+.cultural-practices {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cultural-practices h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.cultural-practices h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cultural-practices .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.practice-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    width: calc(25% - 30px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.practice-card:hover {
+    transform: translateY(-10px);
+}
+
+.practice-icon {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.practice-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.practice-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Music & Dance Section */
+.music-dance {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.music-dance h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.music-dance h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.media-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.video-container {
+    flex: 1;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.music-content {
+    flex: 1;
+}
+
+.music-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.music-content .btn {
+    margin-top: 20px;
+}
+
+/* Cultural Sites Section */
+.cultural-sites {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.cultural-sites h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.cultural-sites h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.site-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.site-card {
+    width: calc(33.33% - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.site-card:hover {
+    transform: translateY(-10px);
+}
+
+.site-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.site-card h3 {
+    font-size: 1.3rem;
+    padding: 15px 20px 10px;
+    color: #333;
+}
+
+.site-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 20px 15px;
+    color: #666;
+}
+
+.site-card .btn {
+    margin: 0 20px 20px;
+    display: inline-block;
+}
+
+/* Testimonials Section */
+.culture-testimonials {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+.culture-testimonials h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.culture-testimonials h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonials-carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    padding: 20px;
+}
+
+.testimonial-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.testimonial-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.testimonial-author h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.testimonial-author p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0;
+    font-style: normal;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #e74c3c;
+}
+
+/* Cultural Experiences Section */
+.culture-experiences {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.culture-experiences h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.culture-experiences h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.experience-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.experience-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.experience-card h3 {
+    font-size: 1.3rem;
+    padding: 15px 20px 10px;
+    color: #333;
+}
+
+.experience-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 20px 15px;
+    color: #666;
+}
+
+.experience-card .btn {
+    margin: 0 20px 20px;
+    display: inline-block;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/culture/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .btn-lg {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section .btn-lg:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .experiences-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .practice-card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 992px) {
+    .culture-grid .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .dual-content {
+        flex-direction: column;
+    }
+    
+    .media-container {
+        flex-direction: column;
+    }
+    
+    .site-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .site-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .experiences-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .practice-card {
+        width: 100%;
+    }
+    
+    .culture-hero {
+        height: 60vh;
+    }
+    
+    .culture-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .culture-intro h2, 
+    .cultural-practices h2, 
+    .daily-life h2, 
+    .music-dance h2, 
+    .cultural-sites h2, 
+    .culture-testimonials h2, 
+    .culture-experiences h2 {
+        font-size: 2rem;
+    }
+    
+    .grid-content h3, 
+    .text-content h3, 
+    .site-card h3, 
+    .experience-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .culture-intro p, 
+    .grid-content p, 
+    .text-content p, 
+    .music-content p {
+        font-size: 0.95rem;
+    }
+}
+*/

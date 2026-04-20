@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+    <title>Temples & Spirituality | Beyond Everest</title>
+    <link rel="stylesheet" href="hfstyles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Temples & Spirituality in Nepal</h1>
+        <p>Discover the sacred temples, spiritual sites, and religious heritage that make Nepal a place of divine connection and cultural richness</p>
+    </section>
+
+   
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Sacred Sites</h2>
+            
+            <div class="featured-temple">
+                <div class="featured-img">
+                    <img src="images/hero.jpg" alt="Pashupatinath Temple" class="map-placeholder">
+                </div>
+                <div class="featured-content">
+                    <h3 class="featured-title">Pashupatinath Temple</h3>
+                    <p class="featured-desc">
+                        Located on the banks of the Bagmati River, Pashupatinath is one of the most sacred Hindu temples dedicated to Lord Shiva. This UNESCO World Heritage site attracts thousands of pilgrims and visitors every year. The temple complex includes numerous shrines, ashrams, and the sacred cremation ghats where Hindu funeral rituals are performed.
+                    </p>
+                    <a href="#" class="btn temple-details-btn" data-id="pashupatinath">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="featured-temple">
+                <div class="featured-content">
+                    <h3 class="featured-title">Boudhanath Stupa</h3>
+                    <p class="featured-desc">
+                        One of the largest stupas in Nepal, Boudhanath is a significant site for Tibetan Buddhism. The stupa's massive mandala makes it one of the largest spherical stupas in Nepal. The peaceful atmosphere is enhanced by the colorful prayer flags, spinning prayer wheels, and the many monasteries that surround the stupa.
+                    </p>
+                    <a href="#" class="btn temple-details-btn" data-id="boudhanath">Learn More</a>
+                </div>
+                <div class="featured-img">
+                    <img src="images/hero.jpg" alt="Boudhanath Stupa" class="map-placeholder">
+                </div>
+            </div>
+            
+            <div class="featured-temple">
+                <div class="featured-img">
+                    <img src="images/hero.jpg" alt="Swayambhunath Temple" class="map-placeholder">
+                </div>
+                <div class="featured-content">
+                    <h3 class="featured-title">Swayambhunath (Monkey Temple)</h3>
+                    <p class="featured-desc">
+                        Perched atop a hill in the Kathmandu Valley, this ancient Buddhist stupa is known for its all-seeing eyes and the troops of monkeys that inhabit the temple. The complex includes several shrines and offers panoramic views of Kathmandu. Both Buddhists and Hindus revere this site, making it a symbol of religious harmony.
+                    </p>
+                    <a href="#" class="btn temple-details-btn" data-id="swayambhunath">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temple Grid Section -->
+    <section class="container">
+        <h2 class="section-title">Explore Sacred Sites</h2>
+        <div class="temple-grid" id="temple-grid">
+            <!-- Temple cards will be inserted here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container info-container">
+            <h2 class="info-title">Visiting Temples in Nepal</h2>
+            
+            <p class="info-text">
+                Nepal is often referred to as the "Land of Temples" for good reason. With thousands of temples, stupas, monasteries, and sacred sites scattered throughout the country, spirituality is deeply woven into the fabric of Nepali life and culture. These sacred structures are not just places of worship but also represent architectural marvels, artistic achievements, and historical landmarks that have stood the test of time.
+            </p>
+            
+            <div class="tips-list">
+                <h3>Visitor Guidelines</h3>
+                <ul>
+                    <li><strong>Dress respectfully</strong> - Cover shoulders and knees when visiting temples. Remove shoes before entering.</li>
+                    <li><strong>Photography</strong> - Always ask permission before taking photos, especially inside temples. Some areas may prohibit photography.</li>
+                    <li><strong>Clockwise movement</strong> - Walk clockwise around stupas and temples as a sign of respect.</li>
+                    <li><strong>Donations</strong> - Small donations are appreciated but not required at most sites.</li>
+                    <li><strong>Cremation sites</strong> - At places like Pashupatinath, be respectful around cremation ceremonies and do not photograph them.</li>
+                    <li><strong>Sacred objects</strong> - Do not touch religious artifacts, statues, or offerings unless invited to do so.</li>
+                </ul>
+            </div>
+            
+            <p class="info-text">
+                The religious diversity of Nepal is reflected in its sacred sites. While Hinduism and Buddhism are the predominant religions, you'll also find sites dedicated to Jainism, Sikhism, and other faiths. What makes Nepal truly special is the harmonious coexistence of these different religious traditions, with many sites being venerated by followers of multiple faiths.
+            </p>
+            
+            <p class="info-text">
+                Religious festivals bring these sacred sites to life throughout the year. From Dashain and Tihar to Buddha Jayanti and countless local celebrations, these events offer visitors a chance to witness vibrant traditions, rituals, and cultural expressions that have continued for centuries.
+            </p>
+        </div>
+    </section>
+
+    <!-- Festival Section -->
+    <section class="festival-section">
+        <div class="container festival-container">
+            <h2 class="festival-title">Religious Festivals in Nepal</h2>
+            <div class="festival-grid">
+                <div class="festival-card">
+                    <img src="images/hero.jpg" alt="Dashain Festival" class="festival-img">
+                    <div class="festival-content">
+                        <h3 class="festival-name">Dashain</h3>
+                        <p class="festival-date">October (Varies by Lunar Calendar)</p>
+                        <p class="festival-desc">Nepal's biggest Hindu festival honoring goddess Durga. Features temple visits, family gatherings, and traditional ceremonies.</p>
+                    </div>
+                </div>
+                
+                <div class="festival-card">
+                    <img src="images/hero.jpg" alt="Tihar Festival" class="festival-img">
+                    <div class="festival-content">
+                        <h3 class="festival-name">Tihar (Diwali)</h3>
+                        <p class="festival-date">November (Varies by Lunar Calendar)</p>
+                        <p class="festival-desc">The festival of lights honoring Goddess Laxmi. Temples and homes are illuminated with oil lamps and colorful lights.</p>
+                    </div>
+                </div>
+                
+                <div class="festival-card">
+                    <img src="images/hero.jpg" alt="Buddha Jayanti" class="festival-img">
+                    <div class="festival-content">
+                        <h3 class="festival-name">Buddha Jayanti</h3>
+                        <p class="festival-date">May (Full Moon)</p>
+                        <p class="festival-desc">Celebrates Buddha's birth, enlightenment, and death. Buddhist temples like Boudhanath and Swayambhunath hold special ceremonies.</p>
+                    </div>
+                </div>
+                
+                <div class="festival-card">
+                    <img src="images/hero.jpg" alt="Maha Shivaratri" class="festival-img">
+                    <div class="festival-content">
+                        <h3 class="festival-name">Maha Shivaratri</h3>
+                        <p class="festival-date">February/March</p>
+                        <p class="festival-desc">Holy night of Lord Shiva. Pashupatinath Temple welcomes thousands of devotees and sadhus from across South Asia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planning Section -->
+    <section class="planning-section">
+        <div class="container">
+            <h2 class="section-title">Plan Your Temple Visit</h2>
+            <div class="planning-grid">
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="planning-title">Best Time to Visit</h3>
+                    <p class="planning-text">
+                        October to November and March to May offer pleasant weather. Consider visiting during festivals like Maha Shivaratri or Buddha Jayanti for a unique experience.
+                    </p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="planning-title">Guided Tours</h3>
+                    <p class="planning-text">
+                        Hire knowledgeable local guides to learn about the history, myths, and religious significance of each site.
+                    </p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3 class="planning-title">Respect Local Customs</h3>
+                    <p class="planning-text">
+                        Learn basic cultural etiquette before visiting. Observe local practices and participate respectfully when invited.
+                    </p>
+                </div>
+                
+                <div class="planning-card">
+                    <div class="planning-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="planning-title">Photography Tips</h3>
+                    <p class="planning-text">
+                        Early morning offers the best light for temple photography. Golden hour creates magical lighting on stupas and temple spires. Always ask permission before photographing people or interior spaces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Sacred Sites Map</h2>
+            <div class="map-container">
+                <img src="images/hero.jpg" alt="Nepal Temple Map" class="map-placeholder">
+                <div class="map-overlay">
+                    <div class="map-text">
+                        <h3>Explore Nepal's Sacred Geography</h3>
+                        <p>Interactive map coming soon. Discover temples throughout the country from the Kathmandu Valley to remote Himalayan monasteries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title">Visitor Experiences</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Watching the sunrise at Boudhanath Stupa while monks chanted their morning prayers was one of the most peaceful experiences of my life. The spiritual energy of Nepal is truly unlike anywhere else."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="images/hero.jpg" alt="Sarah M." class="author-img">
+                        <div class="author-info">
+                            <h4>Sarah M.</h4>
+                            <p>from Australia</p>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "As a photographer, the temples of Nepal offered incredible opportunities. But beyond their visual beauty, I found myself drawn to the rituals and daily spiritual practices that have continued for centuries."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="images/hero.jpg" alt="James L." class="author-img">
+                        <div class="author-info">
+                            <h4>James L.</h4>
+                            <p>from United Kingdom</p>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Visiting during Maha Shivaratri at Pashupatinath was an extraordinary experience. The devotion of the pilgrims and the ancient rituals gave me a deeper understanding of Hindu traditions."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="images/hero.jpg" alt="Priya S." class="author-img">
+                        <div class="author-info">
+                            <h4>Priya S.</h4>
+                            <p>from India</p>
+                        </div>
+                    </div>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Temple Details Modal -->
+    <div class="modal" id="temple-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Temple Details</h2>
+                <span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Temple details will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample temple data
+        const temples = [
+            {
+                id: "pashupatinath",
+                name: "Pashupatinath Temple",
+                location: "Kathmandu",
+                religion: "Hindu",
+                description: "One of the most sacred Hindu temples dedicated to Lord Shiva, located on the banks of the Bagmati River.",
+                image: "/images/hero.jpg",
+                details: {
+                    established: "5th century",
+                    significance: "UNESCO World Heritage Site and one of the most important Shiva temples in the world",
+                    openHours: "4:00 AM - 9:00 PM",
+                    entryFee: "1000 NPR for foreigners, Free for Nepali nationals",
+                    fullDescription: "Pashupatinath Temple is one of the most significant Hindu temples of Lord Shiva in the world, located on the banks of the Bagmati River in the eastern part of Kathmandu. The temple serves as the seat of the national deity, Lord Pashupatinath. This extensive Hindu temple precinct is a sprawling collection of temples, ashrams, images, and inscriptions raised over the centuries along the banks of the sacred Bagmati river. The temple is one of the 275 Paadal Petra Sthalams (Holy Abodes of Shiva) on the continent and is the oldest Hindu temple in Kathmandu. The cremation ghats along the river are a significant part of the temple complex where Hindu funeral rites are performed."
+                }
+            },
+            {
+                id: "boudhanath",
+                name: "Boudhanath Stupa",
+                location: "Kathmandu",
+                religion: "Buddhist",
+                description: "One of the largest stupas in Nepal and the holiest Tibetan Buddhist temple outside Tibet.",
+                image: "/images/hero.jpg",
+                details: {
+                    established: "6th century (approximately)",
+                    significance: "UNESCO World Heritage Site and important pilgrimage site for Tibetan Buddhists",
+                    openHours: "5:00 AM - 7:00 PM",
+                    entryFee: "400 NPR for foreigners, Free for locals",
+                    fullDescription: "Boudhanath Stupa is one of the largest stupas in Nepal and the holiest Tibetan Buddhist temple outside Tibet. The stupa's massive mandala makes it one of the largest spherical stupas in Nepal. After the 1959 Chinese occupation of Tibet, numerous Tibetan refugees settled in the area. The stupa is rich in symbolism: the base represents earth, the dome water, the spire fire, the crown air, and the pinnacle is emblematic of ether or space. The thirteen tiers of the spire represent the stages of spiritual awakening leading to enlightenment."
+                }
+            },
+            {
+                id: "swayambhunath",
+                name: "Swayambhunath (Monkey Temple)",
+                location: "Kathmandu",
+                religion: "Buddhist",
+                description: "Ancient religious complex atop a hill in the Kathmandu Valley, known for its distinctive eyes painted on the main stupa.",
+                image: "/images/hero.jpg",
+                details: {
+                    established: "5th century (traditional accounts state earlier)",
+                    significance: "UNESCO World Heritage Site sacred to both Buddhists and Hindus",
+                    openHours: "6:00 AM - 7:00 PM",
+                    entryFee: "200 NPR for foreigners, Free for locals",
+                    fullDescription: "Swayambhunath is an ancient religious complex atop a hill in the Kathmandu Valley. The complex consists of a stupa, a variety of shrines and temples, some dating back to the Licchavi period. A Tibetan monastery, museum and library are more recent additions. The stupa has Buddha's eyes and eyebrows painted on it. Between them, the number one (in Nepali) is painted in the fashion of a nose. The site has two access points: a long stairway leading directly to the main platform of the temple, which is from the top of the hill to the east; and a car road around the hill from the south leading to the southwest entrance."
+                }
+            },
+            {
+                id: "lumbini",
+                name: "Lumbini",
+                location: "Rupandehi District",
+                religion: "Buddhist",
+                description: "Birthplace of Lord Buddha and a UNESCO World Heritage Site featuring the sacred garden and Mayadevi Temple.",
+                image: "/images/hero.jpg",
+                details: {
+                    established: "623 BCE (Buddha's birthplace)",
+                    significance: "UNESCO World Heritage Site and one of the most important pilgrimage sites for Buddhists",
+                    openHours: "Sunrise to Sunset",
+                    entryFee: "Varies by nationality",
+                    fullDescription: "Lumbini, the birthplace of Lord Buddha, is located in the Terai plains of southern Nepal. The site is marked by a stone pillar erected by Emperor Ashoka of India in 249 BCE. Today, Lumbini is being developed as a Buddhist pilgrimage center, where the archaeological remains associated with the birth of the Buddha form a central feature. The sacred area includes the Sacred Garden with the Maya Devi Temple at its center, monasteries, a museum, and the Lumbini International Research Institute. Different countries have built temples and monasteries in the Monastic Zone in their own national styles."
+                }
+            },
+            {
+                id: "muktinath",
+                name: "Muktinath Temple",
+                location: "Mustang District",
+                religion: "Hindu/Buddhist",
+                description: "Sacred temple in the Himalayan mountains dedicated to Lord Vishnu and venerated by both Hindus and Buddhists.",
+                image: "/images/hero.jpg",
+                details: {
+                    established: "Unknown ancient origins",
+                    significance: "One of the highest temples in the world and important for both Hindu and Buddhist pilgrims",
+                    openHours: "6:00 AM - 7:00 PM",
+                    entryFee: "1000 NPR for foreigners",
+                    fullDescription: "Muktinath Temple is located at an altitude of 3,710 meters at the foot of the Thorong La mountain pass in Mustang. The shrine is considered sacred by both Hindus and Buddhists. The main shrine contains a gold-covered statue of Vishnu as Shri Mukti Narayana. In front of the temple is a semi-circular wall with 108 bull-faced water spouts that pour out water channeled from the sacred Kali Gandaki River. Pilgrims often bathe in these frigid waters. For Buddhists, the temple is dedicated to Avalokitesvara (Padmapani), the Bodhisattva of Compassion."
+                }
+            },
+            {
+                id: "changu",
+                name: "Changu Narayan Temple",
+                location: "Bhaktapur",
+                religion: "Hindu",
+                description: "Ancient temple dedicated to Lord Vishnu, featuring some of the finest stone, wood, and metal craftsmanship in Nepal.",
+                image: "/images/hero.jpg",
+                details: {
+                    established: "4th century",
+                    significance: "UNESCO World Heritage Site and oldest Hindu temple still in use in the Kathmandu Valley",
+                    openHours: "6:00 AM - 6:00 PM",
+                    entryFee: "300 NPR for foreigners",
+                    fullDescription: "Changu Narayan Temple is considered the oldest temple in Nepal, dating back to the 4th century. Dedicated to Lord Vishnu, the temple stands on a high hilltop known as Changu or Dolagiri. The temple is surrounded by forest with champak trees and a small village called Changu. The temple is adorned with some of the finest examples of stone, wood, and metal craftsmanship in the Kathmandu Valley. The complex is rich in ancient art, with numerous statues and inscriptions, including the oldest known inscription in Nepal's history dated 464 CE."
+                }
+            }
+        ];
+
+        // Function to generate temple cards
+        function generateTempleCards() {
+            const templeGrid = document.getElementById('temple-grid');
+            
+            temples.forEach(temple => {
+                const card = document.createElement('div');
+                card.className = 'temple-card';
+                card.innerHTML = `
+                    <img src="${temple.image}" alt="${temple.name}" class="temple-img">
+                    <div class="temple-content">
+                        <h3 class="temple-title">${temple.name}</h3>
+                        <p class="temple-location"><i class="fas fa-map-marker-alt"></i> ${temple.location} - ${temple.religion}</p>
+                        <p class="temple-desc">${temple.description}</p>
+                        <a href="#" class="temple-link temple-details-btn" data-id="${temple.id}">View Details</a>
+                    </div>
+                `;
+                templeGrid.appendChild(card);
+            });
+        }
+
+        // Initialize temple cards on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            generateTempleCards();
+            setupModalListeners();
+            setupBackToTop();
+        });
+
+        // Modal functionality
+        function setupModalListeners() {
+            const modal = document.getElementById('temple-modal');
+            const closeBtn = document.getElementById('close-modal');
+            const detailBtns = document.querySelectorAll('.temple-details-btn');
+            
+            detailBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const templeId = this.getAttribute('data-id');
+                    openTempleModal(templeId);
+                });
+            });
+            
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        // Open temple modal with details
+        function openTempleModal(templeId) {
+            const temple = temples.find(t => t.id === templeId);
+            if (!temple) return;
+            
+            const modal = document.getElementById('temple-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            
+            modalTitle.textContent = temple.name;
+            
+            modalBody.innerHTML = `
+                <div class="temple-details">
+                    <div class="temple-details-img">
+                        <img src="${temple.image}" alt="${temple.name}">
+                    </div>
+                    <div class="temple-details-content">
+                        <h3 class="temple-details-title">${temple.name}</h3>
+                        <h4 class="temple-details-subtitle">${temple.location} - ${temple.religion}</h4>
+                        
+                        <div class="temple-info-grid">
+                            <div class="temple-info-item">
+                                <div class="temple-info-icon"><i class="fas fa-history"></i></div>
+                                <div>
+                                    <strong>Established:</strong>
+                                    <p>${temple.details.established}</p>
+                                </div>
+                            </div>
+                            <div class="temple-info-item">
+                                <div class="temple-info-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <strong>Open Hours:</strong>
+                                    <p>${temple.details.openHours}</p>
+                                </div>
+                            </div>
+                            <div class="temple-info-item">
+                                <div class="temple-info-icon"><i class="fas fa-ticket-alt"></i></div>
+                                <div>
+                                    <strong>Entry Fee:</strong>
+                                    <p>${temple.details.entryFee}</p>
+                                </div>
+                            </div>
+                            <div class="temple-info-item">
+                                <div class="temple-info-icon"><i class="fas fa-star"></i></div>
+                                <div>
+                                    <strong>Significance:</strong>
+                                    <p>${temple.details.significance}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="temple-description">
+                    <h3>About ${temple.name}</h3>
+                    <p>${temple.details.fullDescription}</p>
+                </div>
+                
+                <div class="temple-gallery">
+                    <div class="gallery-item">
+                        <img src="images/hero.jpg" alt="${temple.name} Gallery Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hero.jpg" alt="${temple.name} Gallery Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hero.jpg" alt="${temple.name} Gallery Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hero.jpg" alt="${temple.name} Gallery Image 4">
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+        }
+
+        // Back to Top functionality
+        function setupBackToTop() {
+            const backToTopBtn = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('active');
+                } else {
+                    backToTopBtn.classList.remove('active');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
+
+    <div id="footer"></div>
+    <script src="hfscript.js"></script>
+</body>
+</html>
+
+

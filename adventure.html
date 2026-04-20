@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+    <title>Beyond Everest - Adventure Activities</title>
+    <link rel="stylesheet" href="hfstyles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Adventure page — hero background */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.68)),
+                        url('images/hero.jpg') center/cover no-repeat;
+            min-height: 60vh;
+        }
+        /* Table row zebra dark fix */
+        [data-theme="dark"] .fee-table tr:nth-child(even) td { background: var(--color-bg-muted); }
+        [data-theme="dark"] .fee-table tr:hover td { background: var(--color-primary-ghost); }
+        /* Section wrappers */
+        .adventures { padding: 3rem 0; }
+        .guidelines { padding: 4rem 0; }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Thrilling Adventures</h1>
+            <p>Experience the adrenaline rush of Nepal's most exciting adventure activities with Beyond Everest. From trekking to bungee jumping, we have everything for adventure enthusiasts.</p>
+            <a href="#adventures" class="btn">Explore Activities</a>
+        </div>
+    </section>
+
+    <section id="adventures" class="adventures">
+        <div class="container">
+            <h2 class="section-title">Our Adventure Activities</h2>
+            <div class="adventure-grid">
+                <div class="adventure-card">
+                    <div class="adventure-img">
+                        <img src="images/evet.png" alt="Trekking in Everest Region">
+                    </div>
+                    <div class="adventure-info">
+                        <h3>Everest Base Camp Trek</h3>
+                        <div class="adventure-meta">
+                            <span>Duration: 14 Days</span>
+                            <span>Difficulty: Challenging</span>
+                        </div>
+                        <p class="adventure-desc">Experience the journey to the base of the world's highest peak, passing through stunning Sherpa villages, monasteries, and breathtaking Himalayan landscapes.</p>
+                        <a href="#" class="adventure-link">Learn More â†’</a>
+                    </div>
+                </div>
+
+                <div class="adventure-card">
+                    <div class="adventure-img">
+                        <img src="images/raft.png" alt="White Water Rafting">
+                    </div>
+                    <div class="adventure-info">
+                        <h3>White Water Rafting</h3>
+                        <div class="adventure-meta">
+                            <span>Duration: 1-3 Days</span>
+                            <span>Difficulty: Moderate</span>
+                        </div>
+                        <p class="adventure-desc">Navigate through the thrilling rapids of Trishuli, Bhote Koshi, or Seti Rivers with experienced guides and quality equipment for a safe and exhilarating experience.</p>
+                        <a href="#" class="adventure-link">Learn More â†’</a>
+                    </div>
+                </div>
+
+                <div class="adventure-card">
+                    <div class="adventure-img">
+                        <img src="images/para.png" alt="Paragliding in Pokhara">
+                    </div>
+                    <div class="adventure-info">
+                        <h3>Paragliding in Pokhara</h3>
+                        <div class="adventure-meta">
+                            <span>Duration: 30-60 Minutes</span>
+                            <span>Difficulty: Easy</span>
+                        </div>
+                        <p class="adventure-desc">Soar like a bird over the beautiful Pokhara Valley with breathtaking views of Phewa Lake, the Annapurna range, and Machhapuchhre (Fishtail Mountain).</p>
+                        <a href="#" class="adventure-link">Learn More â†’</a>
+                    </div>
+                </div>
+
+                <div class="adventure-card">
+                    <div class="adventure-img">
+                        <img src="images/bung.png" alt="Bungee Jumping">
+                    </div>
+                    <div class="adventure-info">
+                        <h3>Bungee Jumping</h3>
+                        <div class="adventure-meta">
+                            <span>Duration: Half-day</span>
+                            <span>Difficulty: Extreme</span>
+                        </div>
+                        <p class="adventure-desc">Take the plunge from Nepal's highest bungee platform (160m) over the wild Bhote Koshi River, surrounded by hills and stunning natural scenery.</p>
+                        <a href="#" class="adventure-link">Learn More â†’</a>
+                    </div>
+                </div>
+
+                <div class="adventure-card">
+                    <div class="adventure-img">
+                        <img src="images/biking.png" alt="Mountain Biking">
+                    </div>
+                    <div class="adventure-info">
+                        <h3>Mountain Biking</h3>
+                        <div class="adventure-meta">
+                            <span>Duration: 1-7 Days</span>
+                            <span>Difficulty: Varies</span>
+                        </div>
+                        <p class="adventure-desc">Explore Nepal's diverse terrain from the Kathmandu Valley to the Annapurna Circuit on mountain bikes, with routes suitable for all skill levels.</p>
+                        <a href="#" class="adventure-link">Learn More â†’</a>
+                    </div>
+                </div>
+
+                <div class="adventure-card">
+                    <div class="adventure-img">
+                        <img src="images/safari.png" alt="Jungle Safari">
+                    </div>
+                    <div class="adventure-info">
+                        <h3>Jungle Safari in Chitwan</h3>
+                        <div class="adventure-meta">
+                            <span>Duration: 2-4 Days</span>
+                            <span>Difficulty: Easy</span>
+                        </div>
+                        <p class="adventure-desc">Discover Nepal's rich wildlife in Chitwan National Park, home to rhinos, tigers, elephants, and over 500 bird species. Experience jeep safaris, canoe rides, and walking tours.</p>
+                        <a href="#" class="adventure-link">Learn More â†’</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="safety">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--color-text);">Safety First</h2>
+            <div class="safety-grid">
+                <div class="safety-item">
+                    <div class="safety-icon">â›‘️</div>
+                    <h3>Professional Guides</h3>
+                    <p>All our adventures are led by certified professionals with years of experience and safety training.</p>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">🛡️</div>
+                    <h3>Quality Equipment</h3>
+                    <p>We provide high-quality, regularly inspected gear for all activities to ensure your safety.</p>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">🏥</div>
+                    <h3>Medical Support</h3>
+                    <p>First aid kits and trained personnel available on all adventures, with evacuation plans in place.</p>
+                </div>
+                <div class="safety-item">
+                    <div class="safety-icon">📍</div>
+                    <h3>Thorough Briefings</h3>
+                    <p>Comprehensive safety instructions and briefings provided before every adventure activity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guidelines">
+        <div class="container">
+            <h2 class="section-title">Guidelines & Information</h2>
+            
+            <div class="guideline-tabs">
+                <button class="tab-btn active" data-target="general">General Guidelines</button>
+                <button class="tab-btn" data-target="trekking">Trekking</button>
+                <button class="tab-btn" data-target="rafting">Rafting</button>
+                <button class="tab-btn" data-target="fees">Activity Fees</button>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="general">
+                    <h3>General Adventure Guidelines</h3>
+                    <ul class="guideline-list">
+                        <li>Always follow instructions from your guide or instructor</li>
+                        <li>Inform us about any medical conditions before booking</li>
+                        <li>Wear appropriate clothing and footwear for the activity</li>
+                        <li>Stay hydrated and protect yourself from the sun</li>
+                        <li>Respect local customs, traditions, and the natural environment</li>
+                        <li>Travel insurance with adventure activity coverage is mandatory</li>
+                        <li>Book activities at least 48 hours in advance</li>
+                        <li>Arrive 15 minutes before the scheduled start time</li>
+                    </ul>
+                    
+                    <h3>What to Bring</h3>
+                    <ul class="guideline-list">
+                        <li>Valid identification (passport or ID card)</li>
+                        <li>Copy of your travel insurance policy</li>
+                        <li>Personal medications if required</li>
+                        <li>Water bottle and snacks</li>
+                        <li>Sunscreen, hat, and sunglasses</li>
+                        <li>Camera (waterproof for water activities)</li>
+                        <li>Cash for additional expenses or tips</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-pane" id="trekking">
+                    <h3>Trekking Guidelines</h3>
+                    <ul class="guideline-list">
+                        <li>Acclimatize properly to avoid altitude sickness</li>
+                        <li>Trek at your own pace - it's not a race</li>
+                        <li>Stay on marked trails to avoid getting lost</li>
+                        <li>Carry enough water and purification tablets</li>
+                        <li>Pack light but include essential gear</li>
+                        <li>Inform someone about your trekking plans</li>
+                        <li>Be prepared for sudden weather changes</li>
+                        <li>Respect wildlife and maintain distance</li>
+                    </ul>
+                    
+                    <h3>Recommended Gear</h3>
+                    <ul class="guideline-list">
+                        <li>Sturdy hiking boots with ankle support</li>
+                        <li>Layered clothing (base layer, insulation layer, outer shell)</li>
+                        <li>Warm hat, gloves, and thermal socks</li>
+                        <li>Sleeping bag rated for cold temperatures</li>
+                        <li>Trekking poles for stability</li>
+                        <li>Headlamp or flashlight with extra batteries</li>
+                        <li>First aid kit with blister treatment</li>
+                        <li>High-energy snacks and water bottles</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-pane" id="rafting">
+                    <h3>Rafting Safety Guidelines</h3>
+                    <ul class="guideline-list">
+                        <li>Always wear the provided life jacket and helmet</li>
+                        <li>Listen carefully to the safety briefing before starting</li>
+                        <li>Learn and understand the paddling commands</li>
+                        <li>Stay in the raft unless instructed otherwise</li>
+                        <li>If you fall out, float on your back with feet forward</li>
+                        <li>Keep hands and feet inside the raft when navigating rapids</li>
+                        <li>Hold the paddle with one hand on the T-grip at all times</li>
+                        <li>Inform your guide if you feel uncomfortable or unsafe</li>
+                    </ul>
+                    
+                    <h3>What to Wear for Rafting</h3>
+                    <ul class="guideline-list">
+                        <li>Quick-drying clothes (shorts/swimwear and t-shirt)</li>
+                        <li>Secure footwear that won't come off in water (not flip-flops)</li>
+                        <li>Sunscreen (waterproof recommended)</li>
+                        <li>Strap for glasses or contact lenses</li>
+                        <li>Change of dry clothes for after the activity</li>
+                        <li>Towel and toiletries</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-pane" id="fees">
+                    <h3>Activity Fees 2025</h3>
+                    <table class="fee-table">
+                        <thead>
+                            <tr>
+                                <th>Activity</th>
+                                <th>Duration</th>
+                                <th>Price (USD)</th>
+                                <th>Includes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Everest Base Camp Trek</td>
+                                <td>14 Days</td>
+                                <td>$1,450</td>
+                                <td>Guide, permits, accommodation, meals, transportation</td>
+                            </tr>
+                            <tr>
+                                <td>Annapurna Circuit Trek</td>
+                                <td>12-16 Days</td>
+                                <td>$1,250</td>
+                                <td>Guide, permits, accommodation, meals, transportation</td>
+                            </tr>
+                            <tr>
+                                <td>White Water Rafting (Trishuli)</td>
+                                <td>1 Day</td>
+                                <td>$60</td>
+                                <td>Equipment, guide, lunch, transportation</td>
+                            </tr>
+                            <tr>
+                                <td>White Water Rafting (Bhote Koshi)</td>
+                                <td>2 Days</td>
+                                <td>$150</td>
+                                <td>Equipment, guide, meals, accommodation, transportation</td>
+                            </tr>
+                            <tr>
+                                <td>Paragliding (Pokhara)</td>
+                                <td>30 Minutes</td>
+                                <td>$90</td>
+                                <td>Equipment, pilot, photos/videos, transportation</td>
+                            </tr>
+                            <tr>
+                                <td>Bungee Jumping</td>
+                                <td>Half-day</td>
+                                <td>$120</td>
+                                <td>Equipment, instructor, certificate, transportation</td>
+                            </tr>
+                            <tr>
+                                <td>Mountain Biking (Day Tour)</td>
+                                <td>1 Day</td>
+                                <td>$80</td>
+                                <td>Bike rental, helmet, guide, lunch, transportation</td>
+                            </tr>
+                            <tr>
+                                <td>Jungle Safari (Chitwan)</td>
+                                <td>3 Days</td>
+                                <td>$290</td>
+                                <td>Accommodation, meals, activities, park fees, guide</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Additional Information</h3>
+                    <ul class="guideline-list">
+                        <li>Prices are per person and may vary by season</li>
+                        <li>Group discounts available for 4+ people</li>
+                        <li>50% deposit required at booking</li>
+                        <li>Full payment due 7 days before activity</li>
+                        <li>Cancellation policy: 100% refund if cancelled 7+ days before, 50% if 3-6 days before, no refund if less than 3 days</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--color-text);">Book Your Adventure</h2>
+            <div class="contact-form">
+                <form id="adventure-booking-form">
+                    <div class="form-group">
+                        <input type="text" id="adventure-name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="adventure-email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="adventure-phone" class="form-control" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <select id="adventure-activity" class="form-control" required>
+                            <option value="" disabled selected>Select Adventure Activity</option>
+                            <option value="ebc">Everest Base Camp Trek</option>
+                            <option value="annapurna">Annapurna Circuit Trek</option>
+                            <option value="rafting">White Water Rafting</option>
+                            <option value="paragliding">Paragliding</option>
+                            <option value="bungee">Bungee Jumping</option>
+                            <option value="biking">Mountain Biking</option>
+                            <option value="safari">Jungle Safari</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="adventure-date" class="form-control" placeholder="Preferred Date">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="adventure-message" class="form-control" placeholder="Additional Information or Questions"></textarea>
+                    </div>
+                    <button type="submit" class="btn form-btn">Book Now</button>
+                    <p id="adventure-booking-status" style="margin-top: 12px;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script>
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and panes
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Show corresponding pane
+                const target = button.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Responsive navigation
+        const menuToggle = document.createElement('div');
+        menuToggle.className = 'menu-toggle';
+        menuToggle.innerHTML = 'â˜°';
+        menuToggle.style.cssText = `
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--color-text);
+        `;
+        
+        const navMenu = document.querySelector('nav ul');
+        const headerContent = document.querySelector('.header-content');
+        
+        headerContent.insertBefore(menuToggle, navMenu);
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+        
+        function handleResponsive() {
+            if (window.innerWidth <= 768) {
+                menuToggle.style.display = 'block';
+                navMenu.style.cssText = `
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    flex-direction: column;
+                    background: var(--color-text);
+                    text-align: center;
+                    display: none;
+                    padding: 1rem 0;
+                    z-index: 100;
+                    box-shadow: var(--shadow-md);
+                `;
+                navMenu.querySelectorAll('li').forEach(item => {
+                    item.style.margin = '0.5rem 0';
+                });
+                
+                navMenu.classList.contains('show') ? navMenu.style.display = 'flex' : navMenu.style.display = 'none';
+            } else {
+                menuToggle.style.display = 'none';
+                navMenu.style.cssText = `
+                    display: flex;
+                    position: static;
+                    background: none;
+                    box-shadow: none;
+                    padding: 0;
+                `;
+                navMenu.querySelectorAll('li').forEach(item => {
+                    item.style.margin = '0 0 0 1.5rem';
+                });
+            }
+        }
+        
+        window.addEventListener('resize', handleResponsive);
+        handleResponsive();
+        
+        // Add some animation to adventure cards
+        const adventureCards = document.querySelectorAll('.adventure-card');
+        
+        function checkScroll() {
+            adventureCards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (cardPosition < screenPosition) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        }
+        
+        adventureCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        window.addEventListener('scroll', checkScroll);
+        checkScroll();
+        
+        // Form validation
+        const form = document.getElementById('adventure-booking-form');
+        
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const inputs = this.querySelectorAll('input, select, textarea');
+            
+            inputs.forEach(input => {
+                if (input.hasAttribute('required') && !input.value) {
+                    isValid = false;
+                    input.style.borderColor = 'var(--color-primary)';
+                } else {
+                    input.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (isValid) {
+                const submitBtn = this.querySelector('.form-btn');
+                const status = document.getElementById('adventure-booking-status');
+                submitBtn.disabled = true;
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Booking...';
+                status.textContent = '';
+
+                const messageText = document.getElementById('adventure-message').value || 'No additional details.';
+                const payload = {
+                    name: document.getElementById('adventure-name').value,
+                    email: document.getElementById('adventure-email').value,
+                    interest: document.getElementById('adventure-activity').value,
+                    message: `${messageText}\n\nPhone: ${document.getElementById('adventure-phone').value || 'not-provided'}\nPreferred date: ${document.getElementById('adventure-date').value || 'not-provided'}`,
+                    page: 'adventure'
+                };
+
+                try {
+                    const response = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+                    if (!response.ok) {
+                        throw new Error(result.error || 'Failed to submit booking request');
+                    }
+
+                    const formContainer = document.querySelector('.contact-form');
+                    formContainer.innerHTML = `
+                        <div style="text-align: center; padding: 2rem;">
+                            <div style="font-size: 3rem; color: var(--color-text-secondary); margin-bottom: 1rem;">&#10003;</div>
+                            <h3 style="color: var(--color-text-secondary); margin-bottom: 1rem;">Booking Request Sent!</h3>
+                            <p>Thank you for booking with Beyond Everest. We will contact you within 24 hours to confirm your adventure.</p>
+                        </div>
+                    `;
+                } catch (error) {
+                    status.style.color = '#c92a2a';
+                    status.textContent = error.message || 'Something went wrong. Please try again.';
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                }
+            }
+        });
+        
+        // Weather widget for popular adventure locations
+        const weatherLocations = [
+            { name: 'Everest Region', lat: 27.9881, lon: 86.9250 },
+            { name: 'Annapurna', lat: 28.5964, lon: 83.8101 },
+            { name: 'Pokhara', lat: 28.2096, lon: 83.9856 },
+            { name: 'Chitwan', lat: 27.5291, lon: 84.3542 }
+        ];
+        
+        // This is a placeholder for a weather API integration
+        // In a real implementation, you would fetch weather data from an API
+        function createWeatherWidget() {
+            const container = document.createElement('div');
+            container.className = 'weather-widget';
+            container.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: var(--color-text);
+                border-radius: 10px;
+                padding: 1rem;
+                box-shadow: var(--shadow-md);
+                z-index: 100;
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            `;
+            
+            const header = document.createElement('div');
+            header.innerHTML = '<h4 style="margin: 0; color: var(--color-text);">Adventure Weather</h4>';
+            container.appendChild(header);
+            
+            const content = document.createElement('div');
+            content.style.fontSize = '0.9rem';
+            
+            weatherLocations.forEach(location => {
+                // Random temperature for demonstration
+                const temp = Math.floor(Math.random() * 15) + 10;
+                const conditions = ['Sunny', 'Partly Cloudy', 'Cloudy', 'Light Rain'][Math.floor(Math.random() * 4)];
+                
+                content.innerHTML += `
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>${location.name}:</span>
+                        <span>${temp}°C, ${conditions}</span>
+                    </div>
+                `;
+            });
+            
+            container.appendChild(content);
+            
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = '×';
+            closeBtn.style.cssText = `
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                background: none;
+                border: none;
+                font-size: 1.2rem;
+                cursor: pointer;
+                color: var(--color-text);
+            `;
+            
+            closeBtn.addEventListener('click', () => {
+                container.remove();
+            });
+            
+            container.appendChild(closeBtn);
+            document.body.appendChild(container);
+        }
+        
+        // Show weather widget after 3 seconds
+        setTimeout(createWeatherWidget, 3000);
+    </script>
+
+    <div id="footer"></div>
+    <script src="hfscript.js"></script>
+</body>
+</html>
+
+
+
+

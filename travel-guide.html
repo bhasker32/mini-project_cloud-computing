@@ -1,0 +1,1092 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+    <title>Travel Guide - Beyond Everest</title>
+    <link rel="stylesheet" href="hfstyles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="footer"></div>
+    <script src="hfscript.js"></script>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Nepal Travel Guide</h1>
+            <p>Everything you need to know for an unforgettable journey through the magical land of mountains, traditions, and warm smiles.</p>
+            <div class="search-container">
+                <input type="text" id="guideSearch" placeholder="What would you like to know about Nepal?">
+                <button onclick="searchGuide()">Search</button>
+            </div>
+        </section>
+        
+        <nav class="guide-nav">
+            <div class="container guide-nav-container">
+                <div class="guide-title">Travel Guide</div>
+                <button class="mobile-menu-btn">â‰¡</button>
+                <ul class="guide-menu">
+                    <li><a href="#essentials" class="active">Travel Essentials</a></li>
+                    <li><a href="#accommodation">Where to Stay</a></li>
+                    <li><a href="#food">Nepali Cuisine</a></li>
+                    <li><a href="#destinations">Must Visit</a></li>
+                    <li><a href="#culture">Cultural Guide</a></li>
+                    <li><a href="#practical">Practical Info</a></li>
+                    <li><a href="#safety">Safety & Health</a></li>
+                    <li><a href="#language">Language Guide</a></li>
+                    <li><a href="#help">Help & Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section class="guide-section" id="essentials">
+            <h2>Travel Essentials</h2>
+            <p>Before setting foot in Nepal, there are a few essential things you should know to ensure a smooth and enjoyable journey.</p>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Visa & Entry Requirements</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p>Most foreigners need a visa to enter Nepal. You can obtain one upon arrival at Tribhuvan International Airport or at land border crossings.</p>
+                    <ul>
+                        <li><strong>Tourist Visa Fees:</strong>
+                            <ul>
+                                <li>15 days: $30 USD</li>
+                                <li>30 days: $50 USD</li>
+                                <li>90 days: $125 USD</li>
+                            </ul>
+                        </li>
+                        <li><strong>Required Documents:</strong>
+                            <ul>
+                                <li>Valid passport (minimum 6 months validity)</li>
+                                <li>Completed visa application form (available online or at arrival)</li>
+                                <li>Passport-sized photo</li>
+                                <li>Visa fee in cash (USD, EUR, GBP accepted)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Online Application:</strong> You can fill out the form before arrival at the <a href="http://online.nepalimmigration.gov.np/" target="_blank">Department of Immigration website</a></li>
+                    </ul>
+                    <p>Citizens of SAARC countries (except Afghanistan) don't need a visa to enter Nepal.</p>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Best Time to Visit</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p>Nepal has four main seasons, each offering unique experiences:</p>
+                    <ul>
+                        <li><strong>Spring (March to May):</strong> Warm temperatures, clear skies, wildflowers in bloom. Great for trekking and mountain views.</li>
+                        <li><strong>Summer/Monsoon (June to August):</strong> Hot and rainy. Not ideal for trekking, but perfect for rain-shadow areas like Upper Mustang and cultural experiences.</li>
+                        <li><strong>Autumn (September to November):</strong> Clear skies, mild temperatures, and excellent visibility. The most popular season for tourists.</li>
+                        <li><strong>Winter (December to February):</strong> Cold at higher elevations but mild in lower regions. Great for lower-altitude trekking and fewer crowds.</li>
+                    </ul>
+                    <p><strong>Recommendation:</strong> Autumn (October-November) offers the best weather for most activities.</p>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>SIM Cards & Internet</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p>Staying connected in Nepal is relatively easy and affordable:</p>
+                    <ul>
+                        <li><strong>Major Providers:</strong> Ncell and Nepal Telecom (NTC) offer the best coverage</li>
+                        <li><strong>Where to Buy:</strong> SIM cards are available at the Tribhuvan International Airport or at authorized stores in cities (bring your passport)</li>
+                        <li><strong>Costs:</strong> 
+                            <ul>
+                                <li>SIM Card: 100-300 NPR (approx. $1-3 USD)</li>
+                                <li>Data Packages: 500 NPR (approx. $4 USD) for 5-10GB depending on provider</li>
+                            </ul>
+                        </li>
+                        <li><strong>Coverage:</strong> Good in major cities and tourist areas; limited in remote trekking regions</li>
+                        <li><strong>Wi-Fi:</strong> Available in most hotels, restaurants, and cafes in urban areas</li>
+                    </ul>
+                    <p><strong>Tip:</strong> Ncell generally has better data speeds in urban areas, while NTC has wider coverage in remote regions.</p>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Currency & Money</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p>The official currency is the Nepalese Rupee (NPR). Managing your money in Nepal:</p>
+                    <ul>
+                        <li><strong>Exchange Rates:</strong> Check current rates before you travel (approximately 1 USD = 130 NPR, but rates fluctuate)</li>
+                        <li><strong>Where to Exchange:</strong> 
+                            <ul>
+                                <li>Banks and authorized money changers offer the best rates</li>
+                                <li>Major hotels can exchange currency but at lower rates</li>
+                                <li>ATMs are widely available in cities and tourist areas</li>
+                            </ul>
+                        </li>
+                        <li><strong>ATMs:</strong> Most accept Visa and Mastercard, with withdrawal limits of 10,000-35,000 NPR per transaction</li>
+                        <li><strong>Credit Cards:</strong> Accepted in high-end establishments but cash is preferred for small businesses, especially outside major cities</li>
+                        <li><strong>Tipping:</strong> Not mandatory but appreciated (10% is standard in restaurants if service charge isn't included)</li>
+                    </ul>
+                    <p><strong>Note:</strong> Always carry some cash, especially when traveling to remote areas. It's illegal to exchange currency with unauthorized individuals.</p>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Packing Essentials</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p>What to bring depends on your activities and the season, but here are some essentials:</p>
+                    <ul>
+                        <li><strong>Documents:</strong>
+                            <ul>
+                                <li>Passport and visa</li>
+                                <li>Travel insurance details</li>
+                                <li>Printed hotel reservations</li>
+                                <li>Emergency contacts</li>
+                            </ul>
+                        </li>
+                        <li><strong>Clothing:</strong>
+                            <ul>
+                                <li>Lightweight, breathable clothes for lower elevations</li>
+                                <li>Warm layers for higher altitudes</li>
+                                <li>Waterproof jacket (essential in monsoon season)</li>
+                                <li>Comfortable walking shoes or hiking boots</li>
+                                <li>Modest clothing for temple visits (covering shoulders and knees)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Health Items:</strong>
+                            <ul>
+                                <li>Basic first aid kit</li>
+                                <li>Prescription medications</li>
+                                <li>Sunscreen and insect repellent</li>
+                                <li>Hand sanitizer and wet wipes</li>
+                                <li>Water purification tablets or filter</li>
+                            </ul>
+                        </li>
+                        <li><strong>Electronics:</strong>
+                            <ul>
+                                <li>Universal power adapter (Nepal uses Type C, D, and M plugs)</li>
+                                <li>Portable power bank</li>
+                                <li>Headlamp or flashlight (power outages can occur)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Tip:</strong> Most trekking gear can be purchased or rented in Kathmandu and Pokhara at reasonable prices if you don't want to bring everything from home.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="accommodation">
+            <h2>Where to Stay</h2>
+            <p>Nepal offers a wide range of accommodation options to suit every budget and preference. From luxury hotels to homestays, here's what you need to know:</p>
+            
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Luxury Hotels">
+                    <div class="card-content">
+                        <h3>Luxury Hotels</h3>
+                        <p>Experience world-class hospitality with stunning views of the Himalayas. Major cities like Kathmandu and Pokhara offer 5-star accommodations with all modern amenities.</p>
+                        <p><strong>Price Range:</strong> $100-300+ USD per night</p>
+                        <p><strong>Best For:</strong> Comfort seekers, business travelers</p>
+                        <a href="https://www.booking.com/country/np.html" target="_blank" class="more-btn">Find Hotels</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Mid-range Hotels">
+                    <div class="card-content">
+                        <h3>Mid-range Hotels</h3>
+                        <p>Comfortable accommodations with good amenities at reasonable prices. Found in most tourist destinations throughout Nepal.</p>
+                        <p><strong>Price Range:</strong> $30-100 USD per night</p>
+                        <p><strong>Best For:</strong> Regular travelers, families</p>
+                        <a href="https://www.booking.com/country/np.html" target="_blank" class="more-btn">Find Hotels</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Budget Guesthouses">
+                    <div class="card-content">
+                        <h3>Budget Guesthouses</h3>
+                        <p>Simple, clean rooms with basic amenities. Very common in tourist areas and provide excellent value for money.</p>
+                        <p><strong>Price Range:</strong> $5-30 USD per night</p>
+                        <p><strong>Best For:</strong> Backpackers, long-term travelers</p>
+                        <a href="https://www.hostelworld.com/hostels/Nepal" target="_blank" class="more-btn">Find Guesthouses</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Teahouses">
+                    <div class="card-content">
+                        <h3>Teahouses (Trekking)</h3>
+                        <p>Basic accommodation along trekking routes providing meals and shelter. A quintessential part of the Nepal trekking experience.</p>
+                        <p><strong>Price Range:</strong> $3-15 USD per night</p>
+                        <p><strong>Best For:</strong> Trekkers, adventure seekers</p>
+                        <p><strong>Note:</strong> Facilities become more basic as altitude increases. Advance booking is recommended during peak season.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Homestays">
+                    <div class="card-content">
+                        <h3>Homestays</h3>
+                        <p>Live with local families and experience authentic Nepali hospitality and culture. Available in rural areas and some urban neighborhoods.</p>
+                        <p><strong>Price Range:</strong> $15-40 USD per night (often including meals)</p>
+                        <p><strong>Best For:</strong> Cultural immersion, authentic experiences</p>
+                        <a href="https://www.homestay.com/nepal" target="_blank" class="more-btn">Find Homestays</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Monastery Stays">
+                    <div class="card-content">
+                        <h3>Monastery Stays</h3>
+                        <p>A unique opportunity to stay in Buddhist monasteries and experience spiritual life. Basic accommodations with cultural significance.</p>
+                        <p><strong>Price Range:</strong> Donation-based or $5-15 USD per night</p>
+                        <p><strong>Best For:</strong> Spiritual seekers, meditation practitioners</p>
+                        <p><strong>Note:</strong> Respect monastery rules and schedules. Not all monasteries accept guests; inquire in advance.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tip-card" style="margin-top: 30px;">
+                <h4>Accommodation Tips:</h4>
+                <ul>
+                    <li>Book in advance during peak seasons (October-November and March-April)</li>
+                    <li>Many places in Kathmandu and Pokhara offer free airport pickup</li>
+                    <li>Power outages can occur; check if accommodations have backup generators</li>
+                    <li>Hot water availability varies, especially in budget accommodations</li>
+                    <li>Wi-Fi quality can be inconsistent; check reviews if this is important to you</li>
+                    <li>Negotiating prices is acceptable in budget accommodations, especially for longer stays</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="food">
+            <h2>Nepali Cuisine & Where to Eat</h2>
+            <p>Nepali cuisine is diverse, flavorful, and heavily influenced by its neighbors India and Tibet, yet maintains its unique identity. Here's your guide to eating in Nepal:</p>
+            
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Traditional Nepali Food">
+                    <div class="card-content">
+                        <h3>Must-Try Dishes</h3>
+                        <ul>
+                            <li><strong>Dal Bhat:</strong> The national dish - rice, lentil soup, and curry with vegetables or meat</li>
+                            <li><strong>Momos:</strong> Steamed or fried dumplings filled with vegetables or meat</li>
+                            <li><strong>Sel Roti:</strong> Sweet rice bread, often served during festivals</li>
+                            <li><strong>Thukpa:</strong> Noodle soup popular in mountainous regions</li>
+                            <li><strong>Chatamari:</strong> Newari rice flour "pizza" with various toppings</li>
+                            <li><strong>Yomari:</strong> Sweet dumplings filled with molasses or sesame</li>
+                        </ul>
+                        <a href="https://en.wikipedia.org/wiki/Nepalese_cuisine" target="_blank" class="more-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Where to Eat">
+                    <div class="card-content">
+                        <h3>Where to Eat</h3>
+                        <ul>
+                            <li><strong>Local Restaurants:</strong> Authentic food at reasonable prices</li>
+                            <li><strong>Tourist Restaurants:</strong> International menus with higher prices</li>
+                            <li><strong>Street Food Stalls:</strong> Inexpensive, authentic flavors</li>
+                            <li><strong>Food Courts:</strong> Found in shopping malls with variety</li>
+                            <li><strong>Hotel Restaurants:</strong> Safe but pricier options</li>
+                        </ul>
+                        <p><strong>Recommended Areas:</strong></p>
+                        <p>Kathmandu: Thamel, Jhamsikhel, Durbar Marg<br>
+                        Pokhara: Lakeside, Old Bazaar<br>
+                        Bhaktapur: Durbar Square area</p>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Food Safety">
+                    <div class="card-content">
+                        <h3>Food Safety Tips</h3>
+                        <ul>
+                            <li>Drink only bottled, filtered, or purified water</li>
+                            <li>Ensure meat is thoroughly cooked</li>
+                            <li>Be cautious with street food - choose busy stalls with high turnover</li>
+                            <li>Avoid raw vegetables and fruits unless you can peel them yourself</li>
+                            <li>Check if the restaurant uses filtered water for preparation</li>
+                            <li>Popular establishments with many customers generally serve fresher food</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Dietary Restrictions">
+                    <div class="card-content">
+                        <h3>Dietary Restrictions</h3>
+                        <ul>
+                            <li><strong>Vegetarians:</strong> Well catered for throughout Nepal</li>
+                            <li><strong>Vegans:</strong> Options available in tourist areas, but clarify about ghee (clarified butter) use</li>
+                            <li><strong>Gluten-Free:</strong> Rice-based cuisine is naturally gluten-free, but soy sauce may contain gluten</li>
+                            <li><strong>Halal:</strong> Available in some areas, especially in Kathmandu</li>
+                        </ul>
+                        <p><strong>Key Phrases for Dietary Restrictions:</strong></p>
+                        <p>"Ma shakahari hu" (I am vegetarian)<br>
+                        "Maile masu khaadina" (I don't eat meat)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tip-card" style="margin-top: 30px;">
+                <h4>Nepali Dining Etiquette:</h4>
+                <ul>
+                    <li>Traditionally, food is eaten with the right hand</li>
+                    <li>Wash hands before and after meals</li>
+                    <li>It's considered polite to finish all the food on your plate</li>
+                    <li>When invited to someone's home, wait to be told where to sit</li>
+                    <li>Don't pass food with your left hand</li>
+                    <li>Saying "Dhanybhad" (thank you) after a meal is appreciated</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="destinations">
+            <h2>Must-Visit Destinations</h2>
+            <p>Nepal is incredibly diverse, offering everything from the world's highest mountains to subtropical jungles. Here are some destinations you shouldn't miss:</p>
+            
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Kathmandu">
+                    <div class="card-content">
+                        <h3>Kathmandu Valley</h3>
+                        <p>Nepal's capital and cultural heart featuring UNESCO World Heritage sites, ancient temples, and vibrant markets.</p>
+                        <ul>
+                            <li><strong>Must See:</strong> Durbar Square, Swayambhunath (Monkey Temple), Pashupatinath, Boudhanath</li>
+                            <li><strong>Days Needed:</strong> 3-4 days</li>
+                            <li><strong>Best For:</strong> History, architecture, culture, shopping</li>
+                        </ul>
+                        <a href="#" class="more-btn">Explore Kathmandu</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Pokhara">
+                    <div class="card-content">
+                        <h3>Pokhara</h3>
+                        <p>Lakeside paradise with stunning Annapurna mountain views and gateway to popular treks.</p>
+                        <ul>
+                            <li><strong>Must See:</strong> Phewa Lake, World Peace Pagoda, Sarangkot sunrise, Davis Falls</li>
+                            <li><strong>Days Needed:</strong> 2-4 days</li>
+                            <li><strong>Best For:</strong> Relaxation, adventure sports, pre/post-trekking rest</li>
+                        </ul>
+                        <a href="#" class="more-btn">Explore Pokhara</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Everest Region">
+                    <div class="card-content">
+                        <h3>Everest Region</h3>
+                        <p>Home to the world's highest peak and the famous Everest Base Camp trek.</p>
+                        <ul>
+                            <li><strong>Must See:</strong> Namche Bazaar, Tengboche Monastery, Kala Patthar, Gokyo Lakes</li>
+                            <li><strong>Days Needed:</strong> 12-16 days for EBC trek</li>
+                            <li><strong>Best For:</strong> Trekking, mountain views, Sherpa culture</li>
+                        </ul>
+                        <a href="#" class="more-btn">Explore Everest Region</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Annapurna Circuit">
+                    <div class="card-content">
+                        <h3>Annapurna Region</h3>
+                        <p>One of the world's greatest treks featuring diverse landscapes and cultures.</p>
+                        <ul>
+                            <li><strong>Must See:</strong> Thorong La Pass, Poon Hill, Tilicho Lake, Marpha Village</li>
+                            <li><strong>Days Needed:</strong> 10-21 days for full circuit, 7-10 days for sanctuary</li>
+                            <li><strong>Best For:</strong> Trekking with tea house comfort, diverse landscapes</li>
+                        </ul>
+                        <a href="#" class="more-btn">Explore Annapurna</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Chitwan">
+                    <div class="card-content">
+                        <h3>Chitwan National Park</h3>
+                        <p>UNESCO-listed wildlife reserve offering safaris and a chance to see rhinos, tigers, and more.</p>
+                        <ul>
+                            <li><strong>Must See:</strong> Jungle safaris, Tharu cultural shows, canoeing on Rapti River</li>
+                            <li><strong>Days Needed:</strong> 2-3 days</li>
+                            <li><strong>Best For:</strong> Wildlife, nature, relaxation</li>
+                        </ul>
+                        <a href="#" class="more-btn">Explore Chitwan</a>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <img src="images/hero.jpg" alt="Lumbini">
+                    <div class="card-content">
+                        <h3>Lumbini</h3>
+                        <p>Birthplace of Lord Buddha and an important pilgrimage site for Buddhists worldwide.</p>
+                        <ul>
+                            <li><strong>Must See:</strong> Maya Devi Temple, Ashoka Pillar, Peace Pagoda, international monasteries</li>
+                            <li><strong>Days Needed:</strong> 1-2 days</li>
+                            <li><strong>Best For:</strong> Religious history, meditation, spiritual journey</li>
+                        </ul>
+                        <a href="#" class="more-btn">Explore Lumbini</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tip-card" style="margin-top: 30px;">
+                <h4>Off the Beaten Path:</h4>
+                <ul>
+                    <li><strong>Upper Mustang:</strong> Former forbidden kingdom with Tibetan culture</li>
+                    <li><strong>Rara Lake:</strong> Nepal's largest lake in remote western region</li>
+                    <li><strong>Langtang Valley:</strong> Less crowded trekking with amazing mountain views</li>
+                    <li><strong>Bardia National Park:</strong> Wilder and less visited alternative to Chitwan</li>
+                    <li><strong>Ilam:</strong> Tea gardens and rolling hills in eastern Nepal</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="culture">
+            <h2>Cultural Guide</h2>
+            <p>Nepal is a cultural mosaic with over 125 ethnic groups and 123 languages. Understanding local customs will enrich your experience:</p>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Customs & Etiquette</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <ul>
+                        <li><strong>Greetings:</strong> Place palms together in front of chest and say "Namaste" with a slight bow</li>
+                        <li><strong>Shoes:</strong> Remove before entering homes, temples, and sometimes shops</li>
+                        <li><strong>Pointing:</strong> Avoid pointing with your finger or feet at people or religious objects</li>
+                        <li><strong>Head:</strong> The head is considered sacred - avoid touching others' heads</li>
+                        <li><strong>Public Display of Affection:</strong> Conservative culture - minimal PDA is appreciated</li>
+                        <li><strong>Photography:</strong> Always ask permission before photographing people</li>
+                        <li><strong>Haggling:</strong> Expected in markets and with taxis, but keep it respectful</li>
+                        <li><strong>Trekking Etiquette:</strong> Always pass others on the mountain side of trails and yield to porters/yaks</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Religious Practices</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p>Nepal is primarily Hindu and Buddhist, with practices often blending together:</p>
+                    <ul>
+                        <li><strong>Temple Visits:</strong> 
+                            <ul>
+                                <li>Remove shoes before entering</li>
+                                <li>Walk clockwise around stupas and temples</li>
+                                <li>Some Hindu temples restrict non-Hindu visitors</li>
+                                <li>Avoid touching offerings or religious objects</li>
+                            </ul>
+                        </li>
+                        <li><strong>Prayer Flags:</strong> Colorful flags with prayers that spread blessings through the wind</li>
+                        <li><strong>Prayer Wheels:</strong> Spin clockwise while walking past</li>
+                        <li><strong>Morning Rituals:</strong> Many Nepalis perform puja (worship) in the early morning</li>
+                        <li><strong>Sadhu Etiquette:</strong> Holy men may request money for photos - this is customary</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="beliefs-container">
+                <div class="belief-card">
+                    <img src="images/hero.jpg" alt="Hinduism">
+                    <h3>Hinduism in Nepal</h3>
+                    <p>Nepal was the world's only Hindu kingdom until 2008. Hinduism here has unique features:</p>
+                    <ul>
+                        <li>Living Goddess Kumari tradition</li>
+                        <li>Pashupatinath - one of the most sacred Shiva temples</li>
+                        <li>Animal sacrifice during Dashain festival</li>
+                        <li>Unique blend with Buddhism and animist traditions</li>
+                    </ul>
+                </div>
+                
+                <div class="belief-card">
+                    <img src="images/hero.jpg" alt="Buddhism">
+                    <h3>Buddhism in Nepal</h3>
+                    <p>Buddha was born in Lumbini, Nepal, and Buddhism remains vibrant:</p>
+                    <ul>
+                        <li>Tibetan Buddhist traditions in mountain regions</li>
+                        <li>Newari Buddhism in Kathmandu Valley</li>
+                        <li>Ancient monasteries and stupas</li>
+                        <li>Meditation retreats available for visitors</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Festivals</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p>Nepal celebrates numerous festivals throughout the year:</p>
+                    <ul>
+                        <li><strong>Dashain</strong> (September/October): The most important Hindu festival lasting 15 days</li>
+                        <li><strong>Tihar/Diwali</strong> (October/November): Festival of lights honoring Laxmi, goddess of wealth</li>
+                        <li><strong>Holi</strong> (February/March): Colorful spring festival where people throw colored powder</li>
+                        <li><strong>Losar</strong> (February): Tibetan New Year celebrated in mountainous regions</li>
+                        <li><strong>Indra Jatra</strong> (September): Major Newari festival in Kathmandu with chariot processions</li>
+                        <li><strong>Buddha Jayanti</strong> (May): Buddha's birthday celebrated at Buddhist sites</li>
+                        <li><strong>Mani Rimdu</strong> (November): Sherpa festival with masked dances in Everest region</li>
+                    </ul>
+                    <p><strong>Tip:</strong> Festival dates change yearly as they follow lunar calendars. Check current dates before planning your trip.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="practical">
+            <h2>Practical Information</h2>
+            <p>Essential information to help you navigate day-to-day life in Nepal:</p>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Transportation</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p><strong>Getting Around Cities:</strong></p>
+                    <ul>
+                        <li><strong>Taxis:</strong> Abundant in cities, negotiate fare before starting or insist on meter</li>
+                        <li><strong>Rickshaws:</strong> Good for short distances in historic areas</li>
+                        <li><strong>Local Buses:</strong> Inexpensive but often crowded and challenging to navigate</li>
+                        <li><strong>Ride Apps:</strong> Pathao and Tootle are popular in Kathmandu</li>
+                        <li><strong>Rental Motorcycles/Scooters:</strong> Available in tourist areas (international license required)</li>
+                    </ul>
+                    
+                    <p><strong>Intercity Travel:</strong></p>
+                    <ul>
+                        <li><strong>Tourist Buses:</strong> Comfortable options between major destinations</li>
+                        <li><strong>Local Buses:</strong> Reach remote areas but can be uncomfortable and slow</li>
+                        <li><strong>Domestic Flights:</strong> Time-saving options to major destinations</li>
+                        <li><strong>Jeeps:</strong> Private hire for rough roads or remote areas</li>
+                    </ul>
+                    
+                    <p><strong>Tips:</strong></p>
+                    <ul>
+                        <li>Book domestic flights in advance during peak seasons</li>
+                        <li>Allow extra time for all journeys due to road conditions</li>
+                        <li>Tourist buses are generally safer and more comfortable than local buses</li>
+                        <li>Motion sickness remedies are recommended for mountain roads</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Electricity</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <ul>
+                        <li><strong>Voltage:</strong> 230V AC, 50Hz</li>
+                        <li><strong>Plugs:</strong> Type C (European 2-pin), Type D (Indian 3-pin), and Type M</li>
+                        <li><strong>Power Cuts:</strong> Still occur in some areas though less frequent than in past years</li>
+                        <li><strong>Adapters:</strong> Universal adapters are recommended</li>
+                        <li><strong>Charging:</strong> Power banks are useful for trekking areas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Shopping</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p><strong>What to Buy:</strong></p>
+                    <ul>
+                        <li>Pashmina shawls and cashmere products</li>
+                        <li>Handmade paper products</li>
+                        <li>Thangka paintings</li>
+                        <li>Singing bowls</li>
+                        <li>Handicrafts and woodcarvings</li>
+                        <li>Prayer flags and wheels</li>
+                        <li>Nepali tea</li>
+                        <li>Khukuri knives (check import regulations for your home country)</li>
+                    </ul>
+                    
+                    <p><strong>Shopping Tips:</strong></p>
+                    <ul>
+                        <li>Haggling is expected in markets and small shops (not in fixed-price stores)</li>
+                        <li>Start at around 40-50% of the initial asking price</li>
+                        <li>Be respectful and good-humored when negotiating</li>
+                        <li>Quality varies widely - inspect items carefully</li>
+                        <li>Support fair trade shops where possible</li>
+                    </ul>
+                    
+                    <p><strong>Best Shopping Areas:</strong></p>
+                    <ul>
+                        <li>Thamel in Kathmandu for souvenirs and trekking gear</li>
+                        <li>Patan for metalwork and handicrafts</li>
+                        <li>Bhaktapur for pottery and woodcarvings</li>
+                        <li>Lakeside in Pokhara for casual shopping</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Tipping</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <ul>
+                        <li><strong>Restaurants:</strong> 5-10% if service charge isn't included</li>
+                        <li><strong>Hotels:</strong> NPR 50-100 for porters, NPR 100-200 per day for housekeeping</li>
+                        <li><strong>Taxis:</strong> Rounding up the fare is sufficient</li>
+                        <li><strong>Guides:</strong> USD 7-15 per day</li>
+                        <li><strong>Porters:</strong> USD 5-8 per day</li>
+                        <li><strong>Trekking Staff:</strong> Tip at the end of the trek, usually in a ceremony</li>
+                    </ul>
+                    <p>Note: These are guidelines. Tip according to service quality and your budget.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="safety">
+            <h2>Safety & Health</h2>
+            <p>Nepal is generally a safe country for travelers, but it's wise to take precautions:</p>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>General Safety</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <ul>
+                        <li>Keep valuables secure and be mindful in crowded areas</li>
+                        <li>Use registered taxis, especially at night</li>
+                        <li>Be cautious around stray dogs and monkeys</li>
+                        <li>Avoid political demonstrations</li>
+                        <li>Register with your embassy if staying for an extended period</li>
+                        <li>Solo female travelers should exercise standard precautions</li>
+                        <li>Trust your instincts and be aware of common scams</li>
+                    </ul>
+                    
+                    <p><strong>Common Scams:</strong></p>
+                    <ul>
+                        <li>Fake trekking agencies or guides</li>
+                        <li>Gem and antique scams</li>
+                        <li>"Closed" attractions redirecting to shops</li>
+                        <li>Overcharging for taxi rides</li>
+                    </ul>
+                    
+                    <p><strong>Tip:</strong> Book trekking agencies through official sources like the Trekking Agencies' Association of Nepal (TAAN).</p>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Trekking Safety</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <ul>
+                        <li>Always trek with a partner or group</li>
+                        <li>Register for Trekkers' Information Management System (TIMS) card</li>
+                        <li>Purchase appropriate travel insurance that covers high-altitude trekking and evacuation</li>
+                        <li>Acclimatize properly to avoid altitude sickness</li>
+                        <li>Carry a first aid kit and know how to use it</li>
+                        <li>Stay hydrated and maintain energy levels</li>
+                        <li>Inform someone of your itinerary</li>
+                        <li>Check weather forecasts before setting out</li>
+                        <li>Be prepared for sudden weather changes</li>
+                        <li>Don't trek alone in remote areas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-panel">
+                <div class="info-header">
+                    <h3>Health Precautions</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="info-content">
+                    <p><strong>Before Travel:</strong></p>
+                    <ul>
+                        <li>Consult your doctor about vaccinations (typically Hepatitis A, Typhoid, and others)</li>
+                        <li>Consider a dental check-up</li>
+                        <li>Prepare a comprehensive first aid kit</li>
+                        <li>Bring prescription medications with doctor's note</li>
+                        <li>Purchase travel insurance with medical coverage and evacuation</li>
+                    </ul>
+                    
+                    <p><strong>During Travel:</strong></p>
+                    <ul>
+                        <li>Drink only bottled or purified water</li>
+                        <li>Avoid ice in drinks unless you're sure it's made from purified water</li>
+                        <li>Eat thoroughly cooked food</li>
+                        <li>Wash hands frequently</li>
+                        <li>Use sunscreen and insect repellent</li>
+                        <li>Stay hydrated, especially when trekking</li>
+                    </ul>
+                    
+                    <p><strong>Altitude Sickness:</strong></p>
+                    <ul>
+                        <li>Ascend gradually (no more than 300-500m per day above 3,000m)</li>
+                        <li>Stay hydrated and avoid alcohol</li>
+                        <li>Consider preventive medication like Diamox (consult your doctor)</li>
+                        <li>Know the symptoms: headache, nausea, dizziness, fatigue, loss of appetite</li>
+                        <li>If symptoms persist, descend immediately</li>
+                        <li>"Climb high, sleep low" principle</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="emergency-contacts">
+                <h3>Emergency Contacts</h3>
+                <div class="contact-item"><strong>Tourist Police:</strong> 01-4247041</div>
+                <div class="contact-item"><strong>Police:</strong> 100</div>
+                <div class="contact-item"><strong>Ambulance:</strong> 102</div>
+                <div class="contact-item"><strong>Fire:</strong> 101</div>
+                <div class="contact-item"><strong>Nepal Tourism Board:</strong> 01-4256909</div>
+                <div class="contact-item"><strong>CIWEC Hospital (Kathmandu):</strong> 01-4424111 (specializes in travel medicine)</div>
+                <div class="contact-item"><strong>Helicopter Rescue:</strong> Contact your travel insurance provider</div>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="language">
+            <h2>Language Guide</h2>
+            <p>While English is widely spoken in tourist areas, learning a few Nepali phrases will enhance your experience and show respect for local culture.</p>
+            
+            <table class="language-table">
+                <tr>
+                    <th>English</th>
+                    <th>Nepali</th>
+                    <th>Pronunciation</th>
+                </tr>
+                <tr>
+                    <td>Hello/Greetings</td>
+                    <td>à¤¨à¤®à¤¸à¥à¤¤à¥‡ (Namaste)</td>
+                    <td>nuh-muh-stay</td>
+                </tr>
+                <tr>
+                    <td>Thank you</td>
+                    <td>धन्यवाद (Dhanyavaad)</td>
+                    <td>dhuhn-yuh-vahd</td>
+                </tr>
+                <tr>
+                    <td>Yes</td>
+                    <td>à¤¹à¥‹ (Ho)</td>
+                    <td>ho</td>
+                </tr>
+                <tr>
+                    <td>No</td>
+                    <td>à¤¹à¥‹à¤‡न (Hoina)</td>
+                    <td>hoi-nuh</td>
+                </tr>
+                <tr>
+                    <td>Please</td>
+                    <td>à¤•à¥ƒपया (Kripaya)</td>
+                    <td>krih-puh-yah</td>
+                </tr>
+                <tr>
+                    <td>Sorry</td>
+                    <td>माफ à¤—à¤°à¥à¤¨à¥à¤¹à¥‹स् (Maaf garnuhos)</td>
+                    <td>maaf guh-rnoo-hos</td>
+                </tr>
+                <tr>
+                    <td>How much?</td>
+                    <td>à¤•ति à¤¹à¥‹? (Kati ho?)</td>
+                    <td>kuh-tee ho</td>
+                </tr>
+                <tr>
+                    <td>Too expensive</td>
+                    <td>à¤§à¥‡à¤°à¥ˆ à¤®à¤¹à¤‚à¤—à¥‹ (Dherai mahango)</td>
+                    <td>deh-rye muh-hun-go</td>
+                </tr>
+                <tr>
+                    <td>Where is...?</td>
+                    <td>...à¤•हाँ à¤›? (... kahaa chha?)</td>
+                    <td>... kuh-haan chha</td>
+                </tr>
+                <tr>
+                    <td>I don't understand</td>
+                    <td>à¤®à¥ˆà¤²à¥‡ बुझिनँ (Maile bujhina)</td>
+                    <td>my-lay boo-jhi-nun</td>
+                </tr>
+                <tr>
+                    <td>Delicious</td>
+                    <td>à¤®à¤¿à¤ à¥‹ (Mitho)</td>
+                    <td>mee-tho</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td>à¤ªà¤¾à¤¨à¥€ (Paani)</td>
+                    <td>paa-nee</td>
+                </tr>
+                <tr>
+                    <td>Restaurant</td>
+                    <td>à¤­à¥‹à¤œनालय (Bhojanalay)</td>
+                    <td>bho-juh-naa-lye</td>
+                </tr>
+                <tr>
+                    <td>Toilet/Bathroom</td>
+                    <td>à¤¶à¥Œà¤šालय (Shauchalay)</td>
+                    <td>show-chaa-lye</td>
+                </tr>
+                <tr>
+                    <td>Beautiful</td>
+                    <td>à¤°à¤¾à¤®à¥à¤°à¥‹ (Ramro)</td>
+                    <td>raam-ro</td>
+                </tr>
+            </table>
+            
+            <div class="tip-card">
+                <h4>Language Tips:</h4>
+                <ul>
+                    <li>Nepali is written in Devanagari script, the same as Hindi</li>
+                    <li>Tone is not as important as in some Asian languages</li>
+                    <li>Many Nepalis in tourist areas speak basic English</li>
+                    <li>Learning numbers is especially useful for shopping</li>
+                    <li>Download a translation app like Google Translate with offline Nepali</li>
+                    <li>In remote areas, local dialects may differ from standard Nepali</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="guide-section" id="help">
+            <h2>Help & Resources</h2>
+            <p>Useful resources and contacts to make your journey smoother:</p>
+            
+            <div class="guide-cards">
+                <div class="guide-card">
+                    <div class="card-content">
+                        <h3>Government Resources</h3>
+                        <ul>
+                            <li><strong>Nepal Tourism Board:</strong> www.welcomenepal.com</li>
+                            <li><strong>Department of Immigration:</strong> www.immigration.gov.np</li>
+                            <li><strong>Nepal Police:</strong> www.nepalpolice.gov.np</li>
+                            <li><strong>Nepal Tourism Police:</strong> 01-4247041</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="card-content">
+                        <h3>Health Resources</h3>
+                        <ul>
+                            <li><strong>CIWEC Hospital (Kathmandu):</strong> www.ciwec-clinic.com</li>
+                            <li><strong>Nepal International Clinic:</strong> www.nepalinternationalclinic.com</li>
+                            <li><strong>Himalayan Rescue Association:</strong> www.himalayanrescue.org</li>
+                            <li><strong>CIWEC Hospital (Pokhara):</strong> 061-463082</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guide-card">
+                    <div class="card-content">
+                        <h3>Trekking Resources</h3>
+                        <ul>
+                            <li><strong>Trekking Agencies' Association of Nepal:</strong> www.taan.org.np</li>
+                            <li><strong>Nepal Mountaineering Association:</strong> www.nepalmountaineering.org</li>
+                            <li><strong>Himalayan Database:</strong> www.himalayandatabase.com</li>
+                            <li><strong>Department of National Parks and Wildlife Conservation:</strong>
+                                <li><strong>Department of National Parks and Wildlife Conservation:</strong> www.dnpwc.gov.np</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-card">
+                        <div class="card-content">
+                            <h3>Weather Resources</h3>
+                            <ul>
+                                <li><strong>Department of Hydrology and Meteorology:</strong> www.dhm.gov.np</li>
+                                <li><strong>Mountain Forecast:</strong> www.mountain-forecast.com</li>
+                                <li><strong>AccuWeather Nepal:</strong> www.accuweather.com/en/np/nepal-weather</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="guide-card">
+                        <div class="card-content">
+                            <h3>Useful Apps</h3>
+                            <ul>
+                                <li><strong>Nepal Travel Guide:</strong> Offline maps and information</li>
+                                <li><strong>Maps.me:</strong> Offline maps with trekking routes</li>
+                                <li><strong>Google Translate:</strong> With Nepali offline package</li>
+                                <li><strong>XE Currency:</strong> For easy currency conversion</li>
+                                <li><strong>Pathao:</strong> Ride-hailing in Kathmandu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>Embassy Registration</h4>
+                        <p>Register with your country's embassy in Nepal, especially if you're trekking in remote areas. This helps them contact you in case of emergencies.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4>Travel Insurance</h4>
+                        <p>Always have comprehensive travel insurance that covers high-altitude activities and helicopter evacuation. Keep policy details and emergency contacts accessible.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4>Local Assistance</h4>
+                        <p>Hotel staff and tourism professionals are generally helpful. Don't hesitate to ask them for assistance or recommendations during your stay.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <a href="#" class="back-to-top">â†‘</a>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>Beyond Everest</h3>
+                        <p>Your comprehensive guide to traveling in Nepal, from the highest peaks to the deepest valleys.</p>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#essentials">Travel Essentials</a></li>
+                            <li><a href="#accommodation">Where to Stay</a></li>
+                            <li><a href="#food">Nepali Cuisine</a></li>
+                            <li><a href="#destinations">Must Visit</a></li>
+                            <li><a href="#culture">Cultural Guide</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>More Resources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#practical">Practical Info</a></li>
+                            <li><a href="#safety">Safety & Health</a></li>
+                            <li><a href="#language">Language Guide</a></li>
+                            <li><a href="#help">Help & Resources</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <p>Email: info@beyondeverest.com</p>
+                        <p>Phone: +977-1-4123456</p>
+                        <p>Address: Thamel, Kathmandu, Nepal</p>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Beyond Everest. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            // Toggle mobile menu
+            document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+                document.querySelector('.guide-menu').classList.toggle('active');
+            });
+            
+            // Toggle info panels
+            const infoPanels = document.querySelectorAll('.info-header');
+            infoPanels.forEach(panel => {
+                panel.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                    
+                    const toggleBtn = this.querySelector('.toggle-btn');
+                    toggleBtn.textContent = content.classList.contains('active') ? '-' : '+';
+                });
+            });
+            
+            // Back to top button
+            const backToTopButton = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('active');
+                } else {
+                    backToTopButton.classList.remove('active');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Navigation highlighting
+            const sections = document.querySelectorAll('.guide-section');
+            const navLinks = document.querySelectorAll('.guide-menu a');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+            
+            // Search functionality
+            function searchGuide() {
+                const searchTerm = document.getElementById('guideSearch').value.toLowerCase();
+                const sections = document.querySelectorAll('.guide-section');
+                
+                if (searchTerm.length < 3) {
+                    alert("Please enter at least 3 characters to search");
+                    return;
+                }
+                
+                let found = false;
+                
+                sections.forEach(section => {
+                    if (section.textContent.toLowerCase().includes(searchTerm)) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                        found = true;
+                        return;
+                    }
+                });
+                
+                if (!found) {
+                    alert("No results found for: " + searchTerm);
+                }
+            }
+            
+            // Allow search on enter key
+            document.getElementById('guideSearch').addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchGuide();
+                }
+            });
+        </script>
+    </body>
+    </html>
+
+                                
+
+

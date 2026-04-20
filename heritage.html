@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+    <title>Heritage Sites of Nepal - Beyond Everest</title>
+    <link rel="stylesheet" href="hfstyles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .hero { background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.82)), url('images/heritagehero.png') center/cover no-repeat; }
+        /* Travel tips dark section */
+        .travel-tips { background: var(--color-secondary); padding: 4rem clamp(1rem,3vw,2rem); }
+        [data-theme='dark'] .travel-tips { background: var(--color-bg-subtle); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+        .travel-tips h2 { text-align: center; color: #fff; font-size: 2rem; font-weight: 800; margin-bottom: 2rem; max-width: var(--max-w); margin-left: auto; margin-right: auto; }
+        [data-theme='dark'] .travel-tips h2 { color: var(--color-text); }
+        .travel-tips .tips-container { max-width: var(--max-w); margin-left: auto; margin-right: auto; }
+        .travel-tips .tip-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15); color: #fff; }
+        [data-theme='dark'] .travel-tips .tip-card { background: var(--color-surface-raised); border-color: var(--color-border); }
+        .travel-tips .tip-card h3 { color: #fff; }
+        [data-theme='dark'] .travel-tips .tip-card h3 { color: var(--color-text); }
+        .travel-tips .tip-card li { color: rgba(255,255,255,0.8); }
+        [data-theme='dark'] .travel-tips .tip-card li { color: var(--color-text-secondary); }
+    </style>
+
+</head>
+<body>
+    <div id="header"></div>
+    <div class="hero">
+        <div class="container">
+            <h1>Nepal's Cultural Heritage</h1>
+            <p>Explore the ancient temples, palaces, and sacred sites that showcase Nepal's rich cultural tapestry and architectural brilliance.</p>
+            <a href="#heritage-sites" class="btn btn-primary">Discover Heritage Sites</a>
+        </div>
+    </div>
+
+    <section class="intro">
+        <div class="container">
+            <h2>The Living Heritage of Nepal</h2>
+            <p>Nepal is home to a remarkable collection of cultural and historical sites that tell the story of its rich past and vibrant traditions. From ancient temples and palaces to sacred Buddhist stupas, these heritage sites offer visitors a glimpse into Nepal's architectural brilliance, artistic achievements, and spiritual significance. This guide will help you plan your visit to the most important heritage sites in Kathmandu Valley and beyond.</p>
+        </div>
+    </section>
+
+    <section id="heritage-sites" class="heritage-sites">
+        <div class="container">
+            <h2>Magnificent Heritage Sites</h2>
+            <div class="sites-container">
+                <!-- Kathmandu Durbar Square -->
+                <div id="kathmandu-durbar" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/durbar.jpg" alt="Kathmandu Durbar Square">
+                        <img src="images/KTMDurbar/images.jpg" alt="Kathmandu Durbar Square">
+                        <img src="images/KTMDurbar/Krishnamandir.jpg" alt="Kathmandu Durbar Square">
+                    </div>
+                    <div class="site-info">
+                        <h3>Kathmandu Durbar Square</h3>
+                        <p>A magnificent showcase of Newar architecture with ancient palaces, courtyards, and temples dating back to the 12th century.</p>
+                        <div class="location">
+                            <span>Location: Central Kathmandu</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="kathmandu-durbar-square">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Kathmandu_Durbar_Square" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pashupatinath Temple -->
+                <div id="pashupatinath" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/1.jpg" alt="Pashupatinath Temple">
+                    </div>
+                    <div class="site-info">
+                        <h3>Pashupatinath Temple</h3>
+                        <p>One of the most sacred Hindu temples dedicated to Lord Shiva, situated on the banks of the Bagmati River.</p>
+                        <div class="location">
+                            <span>Location: Eastern Kathmandu</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="pashupatinath-temple">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Pashupatinath_Temple" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boudhanath Stupa -->
+                <div id="boudhanath" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/Boudhanath.jpg" alt="Boudhanath Stupa">
+                    </div>
+                    <div class="site-info">
+                        <h3>Boudhanath Stupa</h3>
+                        <p>One of the largest stupas in the world and a center of Tibetan Buddhism in Nepal with a massive mandala design.</p>
+                        <div class="location">
+                            <span>Location: Northeastern Kathmandu</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="boudhanath-stupa">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Boudhanath" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swayambhunath (Monkey Temple) -->
+                <div id="swayambhunath" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/shyambhu.jpg" alt="Swayambhunath Stupa">
+                    </div>
+                    <div class="site-info">
+                        <h3>Swayambhunath (Monkey Temple)</h3>
+                        <p>An ancient religious complex with a stunning stupa, shrines, and temples, offering panoramic views of Kathmandu Valley.</p>
+                        <div class="location">
+                            <span>Location: Western Kathmandu</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="swayambhunath">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Swayambhunath" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bhaktapur Durbar Square -->
+                <div id="bhaktapur-durbar" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/bhaktapur.jpg" alt="Bhaktapur Durbar Square">
+                    </div>
+                    <div class="site-info">
+                        <h3>Bhaktapur Durbar Square</h3>
+                        <p>The best-preserved Durbar Square showcasing medieval art, architecture, and intricate wood, metal, and stone craftsmanship.</p>
+                        <div class="location">
+                            <span>Location: Bhaktapur City</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="bhaktapur-durbar-square">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Bhaktapur_Durbar_Square" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patan Durbar Square -->
+                <div id="patan-durbar" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/patan.jpg" alt="Patan Durbar Square">
+                    </div>
+                    <div class="site-info">
+                        <h3>Patan Durbar Square</h3>
+                        <p>Known for its stunning display of Newari architecture with intricate wood and stone carvings and the ancient royal palace.</p>
+                        <div class="location">
+                            <span>Location: Patan (Lalitpur)</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="patan-durbar-square">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Patan_Durbar_Square" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Changu Narayan Temple -->
+                <div id="changu-narayan" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/changu-narayan-temple.avif" alt="Changu Narayan Temple">
+                    </div>
+                    <div class="site-info">
+                        <h3>Changu Narayan Temple</h3>
+                        <p>The oldest Hindu temple in the Kathmandu Valley dedicated to Lord Vishnu, featuring exquisite wood and stone carvings.</p>
+                        <div class="location">
+                            <span>Location: Bhaktapur District</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="changu-narayan-temple">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Changu_Narayan" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lumbini -->
+                <div id="lumbini" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/lumbini.jpg" alt="Lumbini">
+                    </div>
+                    <div class="site-info">
+                        <h3>Lumbini</h3>
+                        <p>The birthplace of Lord Buddha and a UNESCO World Heritage Site featuring the sacred garden, Maya Devi Temple, and Ashoka Pillar.</p>
+                        <div class="location">
+                            <span>Location: Rupandehi District, Lumbini Province</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="lumbini">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Lumbini" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Janaki Mandir -->
+                <div id="janaki-mandir" class="site-card">
+                    <div class="site-img">
+                        <img src="images/KTMDurbar/Janaki_Mandir.jpg" alt="Janaki Mandir">
+                    </div>
+                    <div class="site-info">
+                        <h3>Janaki Mandir</h3>
+                        <p>A stunning white marble temple dedicated to Goddess Sita, blending Mughal and Rajput architectural styles.</p>
+                        <div class="location">
+                            <span>Location: Janakpur, Madhesh Province</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="btn btn-primary site-details-btn" data-site="janaki-mandir">View Details</a>
+                            <a href="https://en.wikipedia.org/wiki/Janaki_Mandir" target="_blank" class="btn btn-secondary">Wikipedia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Site Information (Hidden by default) -->
+            <div id="site-detail" class="site-detail">
+                <div id="kathmandu-durbar-square-detail" class="site-detail-content">
+                    <div class="site-detail-img">
+                        <img src="images/ktm.png" alt="Kathmandu Durbar Square Detailed">
+                    </div>
+                    <div class="site-detail-info">
+                        <h3>Kathmandu Durbar Square</h3>
+                        <p>Located in the heart of old Kathmandu city, Kathmandu Durbar Square is one of three Durbar Squares in the Kathmandu Valley. It showcases the spectacular achievements in architecture and craftsmanship of the Newar artisans through centuries.</p>
+                        
+                        <div class="history-section">
+                            <h4>History</h4>
+                            <p>Dating back to the 12th century, the square was the royal palace complex of the Malla and later the Shah dynasty who ruled over Kathmandu. Most of the buildings we see today were built between the 15th and 18th centuries. The square suffered significant damage during the 2015 earthquake, but restoration works have been ongoing.</p>
+                        </div>
+                        
+                        <div class="architecture-section">
+                            <h4>Key Attractions</h4>
+                            <ul>
+                                <li><strong>Hanuman Dhoka Palace:</strong> The royal palace complex with several courtyards and temples.</li>
+                                <li><strong>Taleju Temple:</strong> One of the tallest and most sacred temples, only open once a year during Dashain festival.</li>
+                                <li><strong>Kumari Ghar:</strong> Home to the living goddess Kumari, a young pre-pubescent girl believed to be the incarnation of the goddess Taleju.</li>
+                                <li><strong>Kasthamandap:</strong> The wooden pavilion that gave Kathmandu its name (though destroyed in the 2015 earthquake and being reconstructed).</li>
+                                <li><strong>Degutale Temple:</strong> A three-story temple dedicated to goddess Taleju Bhawani.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cultural-section">
+                            <h4>Cultural Significance</h4>
+                            <p>The square remains the social, religious, and urban focal point of Kathmandu. Many important ceremonies, festivals, and celebrations take place here, including Indra Jatra and Kumari Jatra. The square is a living museum that showcases the cultural heritage of Nepal and continues to function as a space for daily rituals and community gatherings.</p>
+                        </div>
+                        
+                        <div class="visitor-info">
+                            <h4>Visitor Information</h4>
+                            <ul>
+                                <li><strong>Entry Fee:</strong> NPR 1000 for foreigners, SAARC nationals NPR 250</li>
+                                <li><strong>Opening Hours:</strong> 7 AM to 7 PM daily</li>
+                                <li><strong>Best Time to Visit:</strong> Early morning or late afternoon to avoid crowds</li>
+                                <li><strong>Photography:</strong> Allowed (No extra charge)</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#kathmandu-durbar" class="back-btn">Back to Overview</a>
+                    </div>
+                </div>
+
+                <div id="pashupatinath-temple-detail" class="site-detail-content">
+                    <div class="site-detail-img">
+                        <img src="images/pashupati.png" alt="Pashupatinath Temple Detailed">
+                    </div>
+                    <div class="site-detail-info">
+                        <h3>Pashupatinath Temple</h3>
+                        <p>Pashupatinath Temple is one of the most sacred Hindu temples dedicated to Lord Shiva in the world. Located on the banks of the Bagmati River in eastern Kathmandu, it serves as the seat of Nepal's national deity, Lord Pashupatinath.</p>
+                        
+                        <div class="history-section">
+                            <h4>History</h4>
+                            <p>While the exact date of the temple's founding is unknown, it's believed to have existed since at least the 5th century. The current main temple building dates to the 17th century after previous structures were destroyed. The temple complex has been expanded over centuries by various kings and devotees.</p>
+                        </div>
+                        
+                        <div class="architecture-section">
+                            <h4>Key Attractions</h4>
+                            <ul>
+                                <li><strong>Main Temple:</strong> A pagoda-style temple with a gold-plated roof, silver doors, and exquisite wood carvings (interior accessible only to Hindus).</li>
+                                <li><strong>Arya Ghat:</strong> Sacred cremation ghats along the Bagmati River where Hindu funeral rituals are performed.</li>
+                                <li><strong>Lingam Shrines:</strong> Houses the sacred Shiva lingam, the symbol of Lord Shiva.</li>
+                                <li><strong>Panch Deval Complex:</strong> Five temples dedicated to various deities.</li>
+                                <li><strong>Guhyeshwari Temple:</strong> Dedicated to Goddess Parvati, considered a Shakti Peetha.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cultural-section">
+                            <h4>Cultural Significance</h4>
+                            <p>Pashupatinath is the center of Shaivism in Nepal and one of the most important Shiva temples in the world. During Maha Shivaratri, over a million devotees visit the temple complex. The site is also significant for its role in Hindu death rituals, with cremations taking place daily on the ghats of the Bagmati River.</p>
+                        </div>
+                        
+                        <div class="visitor-info">
+                            <h4>Visitor Information</h4>
+                            <ul>
+                                <li><strong>Entry Fee:</strong> NPR 1000 for foreigners</li>
+                                <li><strong>Opening Hours:</strong> 4 AM to 9 PM daily</li>
+                                <li><strong>Best Time to Visit:</strong> Early morning for the temple rituals or evening for the Aarti ceremony</li>
+                                <li><strong>Note:</strong> Only Hindus are allowed inside the main temple, but visitors of all faiths can explore the rest of the complex</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#pashupatinath" class="back-btn">Back to Overview</a>
+                    </div>
+                </div>
+
+                <div id="boudhanath-stupa-detail" class="site-detail-content">
+                    <div class="site-detail-img">
+                        <img src="images/boudhaa.png" alt="Boudhanath Stupa Detailed">
+                    </div>
+                    <div class="site-detail-info">
+                        <h3>Boudhanath Stupa</h3>
+                        <p>Boudhanath is one of the largest stupas in the world and a center of Tibetan Buddhism in Nepal. Its massive mandala design and all-seeing eyes of Buddha gazing in all four directions make it one of the most recognizable landmarks in Kathmandu.</p>
+                        
+                        <div class="history-section">
+                            <h4>History</h4>
+                            <p>Built in the 5th century CE, the stupa was an important point on the ancient trade route from Tibet to the Kathmandu Valley. According to legend, it contains the remains of Kassapa Buddha, one of the Buddhas of the past. After the Chinese occupation of Tibet in 1959, many Tibetan refugees settled around Boudhanath, establishing numerous monasteries and turning the area into a center of Tibetan Buddhism.</p>
+                        </div>
+                        
+                        <div class="architecture-section">
+                            <h4>Key Attractions</h4>
+                            <ul>
+                                <li><strong>Main Stupa:</strong> A massive hemispherical structure representing Buddha's path to enlightenment, with the all-seeing eyes painted on the harmika.</li>
+                                <li><strong>Prayer Wheels:</strong> Numerous prayer wheels encircle the base of the stupa, which pilgrims spin while circumambulating.</li>
+                                <li><strong>Surrounding Monasteries:</strong> Over 50 Tibetan gompas (monasteries) surround the stupa.</li>
+                                <li><strong>Thangka Shops:</strong> Shops selling traditional Tibetan Buddhist paintings called thangkas.</li>
+                                <li><strong>Roof Terraces:</strong> Surrounding cafes with terraces offering excellent views of the stupa.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="cultural-section">
+                            <h4>Cultural Significance</h4>
+                            <p>Boudhanath is the focal point of Tibetan Buddhism in Nepal and a place of daily worship for both local Newars and Tibetan exiles. During important Buddhist festivals like Losar (Tibetan New Year) and Buddha Jayanti, thousands of pilgrims gather here. The ritual of circumambulation (walking clockwise around the stupa while spinning prayer wheels and reciting mantras) is a central practice for devotees.</p>
+                        </div>
+                        
+                        <div class="visitor-info">
+                            <h4>Visitor Information</h4>
+                            <ul>
+                                <li><strong>Entry Fee:</strong> NPR 400 for foreigners</li>
+                                <li><strong>Opening Hours:</strong> 5 AM to 7 PM daily</li>
+                                <li><strong>Best Time to Visit:</strong> Early morning or during sunset when locals gather for prayers</li>
+                                <li><strong>Special Events:</strong> Full moon days for special ceremonies</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#boudhanath" class="back-btn">Back to Overview</a>
+                    </div>
+                </div>
+                
+                <!-- Other site details would follow the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <section class="travel-tips">
+        <div class="container">
+            <h2>Essential Travel Tips for Heritage Sites</h2>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <h3>Best Time to Visit</h3>
+                    <ul>
+                        <li>October to November: Perfect weather with clear mountain views</li>
+                        <li>March to April: Spring season with blooming rhododendrons</li>
+                        <li>Avoid June to September (monsoon season)</li>
+                        <li>Visit sites early morning or late afternoon to avoid crowds</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <h3>Cultural Etiquette</h3>
+                    <ul>
+                        <li>Dress modestly when visiting temples (cover shoulders and knees)</li>
+                        <li>Remove shoes before entering temples and sacred spaces</li>
+                        <li>Walk clockwise around stupas and religious monuments</li>
+                        <li>Ask permission before photographing people</li>
+                        <li>Don't touch offerings or religious objects</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <h3>Practical Information</h3>
+                    <ul>
+                        <li>Purchase the Kathmandu Valley Heritage Pass for multiple sites</li>
+                        <li>Hire a knowledgeable guide for deeper cultural insights</li>
+                        <li>Carry cash as many smaller sites don't accept cards</li>
+                        <li>Bring water, sunscreen, and a hat for sun protection</li>
+                        <li>Download offline maps before your visit</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <h3>Transportation</h3>
+                    <ul>
+                        <li>Most heritage sites in Kathmandu are accessible by taxi</li>
+                        <li>Consider hiring a private car with driver for multiple sites</li>
+                        <li>Public buses run to major sites but can be crowded</li>
+                        <li>Walking between sites in Kathmandu is possible but prepare for busy streets</li>
+                        <li>For distant sites like Lumbini, domestic flights are recommended</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2>Heritage Sites Map</h2>
+            <div class="map-container">
+                <div class="map-info">
+                    <p>Use this map to plan your heritage tour across Nepal. The Kathmandu Valley contains seven UNESCO World Heritage Sites within a 15 km radius, making it one of the densest concentrations of cultural heritage anywhere in the world.</p>
+                </div>
+                <div class="map-image">
+                    <img src="images/heritahemap.png" alt="Map of Heritage Sites in Nepal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="credits">
+        <p>Beyond Everest: Discover Nepal's Cultural Treasures | Â© 2025 All Rights Reserved</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle site details view
+            const siteDetailsButtons = document.querySelectorAll('.site-details-btn');
+            const siteDetailSection = document.getElementById('site-detail');
+            const allSiteDetails = document.querySelectorAll('[id$="-detail"]');
+            
+            siteDetailsButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const siteId = this.getAttribute('data-site');
+                    
+                    // Hide all site details
+                    allSiteDetails.forEach(detail => {
+                        detail.style.display = 'none';
+                    });
+                    
+                    // Show selected site detail
+                    const selectedDetail = document.getElementById(siteId + '-detail');
+                    if (selectedDetail) {
+                        siteDetailSection.style.display = 'block';
+                        selectedDetail.style.display = 'flex';
+                        
+                        // Smooth scroll to detail section
+                        siteDetailSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+            
+            // Handle back buttons
+            const backButtons = document.querySelectorAll('.back-btn');
+            backButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    siteDetailSection.style.display = 'none';
+                    
+                    // Get the href and extract the ID
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    // Smooth scroll to the site card
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+            
+            // Handle hash links for direct access to specific sites
+            if (window.location.hash) {
+                const hash = window.location.hash.substring(1);
+                const siteButton = document.querySelector(`[data-site="${hash}"]`);
+                if (siteButton) {
+                    setTimeout(() => {
+                        siteButton.click();
+                    }, 500);
+                }
+            }
+            
+            // Handle smooth scrolling for all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (!this.classList.contains('site-details-btn') && !this.classList.contains('back-btn')) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+            
+            // Create additional site details dynamically
+            createAdditionalSiteDetails();
+        });
+        
+        function createAdditionalSiteDetails() {
+            // This function creates details for the other heritage sites
+            const siteDetailData = {
+    'swayambhunath': {
+        title: 'Swayambhunath (Monkey Temple)',
+        intro: 'Swayambhunath, also known as the Monkey Temple, is an ancient religious complex atop a hill in the Kathmandu Valley. It features a central stupa with Buddha\'s eyes painted on all four sides, surrounded by various shrines and temples.',
+        mainImage: '/images/swayambhunath-main.jpg',
+        galleryImages: [
+            '/images/swayambhunath-stupa.jpg',
+            '/images/swayambhunath-buddha-eyes.jpg',
+            '/images/swayambhunath-monkeys.jpg',
+            '/images/swayambhunath-panorama.jpg'
+        ],
+        history: 'According to legend, the Kathmandu Valley was once a lake, and the hill where Swayambhunath stands emerged naturally when the bodhisattva Manjushri drained the lake. The stupa is believed to be over 2,000 years old, though most structures date from around the 5th century CE. It remains one of the oldest Buddhist sites in Nepal.',
+        attractions: [
+            '<strong>Main Stupa:</strong> The central white dome with Buddha\'s eyes and the golden spire.',
+            '<strong>Prayer Wheels:</strong> Bronze cylinders inscribed with prayers that visitors spin as they walk around the stupa.',
+            '<strong>Harati Temple:</strong> Dedicated to the goddess of children and smallpox.',
+            '<strong>Buddha Statues:</strong> Various Buddha statues around the complex.',
+            '<strong>The Viewpoint:</strong> Panoramic views of Kathmandu Valley.'
+        ],
+        cultural: 'Swayambhunath holds significance for both Buddhists and Hindus, exemplifying Nepal\'s religious harmony. The resident monkeys are considered holy and associated with Manjushri. The site plays an important role in various Buddhist and Newari festivals throughout the year.',
+        visitor: [
+            '<strong>Entry Fee:</strong> NPR 200 for foreigners',
+            '<strong>Opening Hours:</strong> 5 AM to 7 PM daily',
+            '<strong>Best Time to Visit:</strong> Sunrise for spiritual atmosphere and panoramic views',
+            '<strong>Access:</strong> 365 steps from the eastern entrance, or by road to the western entrance'
+        ]
+    },
+    'bhaktapur-durbar-square': {
+        title: 'Bhaktapur Durbar Square',
+        intro: 'Bhaktapur Durbar Square is the plaza in front of the old royal palace of the former Bhaktapur Kingdom. Known as the best-preserved of the three Durbar Squares in the Kathmandu Valley, it offers an authentic glimpse into medieval Nepal.',
+        mainImage: '/images/bhaktapur-main.jpg',
+        galleryImages: [
+            '/images/bhaktapur-55-window.jpg',
+            '/images/bhaktapur-golden-gate.jpg',
+            '/images/bhaktapur-nyatapola.jpg',
+            '/images/bhaktapur-pottery.jpg'
+        ],
+        history: 'The square was built during the reign of the Malla dynasty in the 15th century. Bhaktapur was once the largest of the three Newar kingdoms of the Kathmandu Valley and was its capital until the 15th century. The city was positioned on the trade route between Tibet and India, which contributed to its prosperity.',
+        attractions: [
+            '<strong>55-Window Palace:</strong> A masterpiece of wood carving with its 55 intricately carved windows.',
+            '<strong>Golden Gate:</strong> The most richly decorated entrance with gilded torana (decorative gateway).',
+            '<strong>Lion\'s Gate:</strong> Guarded by stone statues of warriors on each side.',
+            '<strong>Mini Pashupatinath Temple:</strong> A replica of the famous Pashupatinath Temple.',
+            '<strong>Nyatapola Temple:</strong> A five-story pagoda temple, the tallest in Nepal.'
+        ],
+        cultural: 'Bhaktapur is renowned for its arts and crafts, traditional pottery, and wood carving. The city hosts several important festivals, including Bisket Jatra (Nepali New Year) and Gai Jatra (Cow Festival). The square remains the heart of Bhaktapur\'s social and religious life.',
+        visitor: [
+            '<strong>Entry Fee:</strong> NPR 1500 for foreigners (covers entire Bhaktapur city)',
+            '<strong>Opening Hours:</strong> 8 AM to 7 PM daily',
+            '<strong>Best Time to Visit:</strong> Morning hours for photography',
+            '<strong>Highlight:</strong> Visit the nearby Pottery Square to see traditional pottery making'
+        ]
+    },
+    'patan-durbar-square': {
+        title: 'Patan Durbar Square',
+        intro: 'Patan Durbar Square is situated at the center of Lalitpur (Patan) city, one of the three ancient cities in the Kathmandu Valley. Known for its stunning display of Newari architecture, it houses the ancient royal palace and numerous temples and statues.',
+        mainImage: '/images/patan-main.jpg',
+        galleryImages: [
+            '/images/patan-krishna-temple.jpg',
+            '/images/patan-golden-temple.jpg',
+            '/images/patan-museum.jpg',
+            '/images/patan-courtyard.jpg'
+        ],
+        history: 'Patan is believed to have been founded in the 3rd century BCE by the Kirat dynasty, making it one of the oldest known Buddhist cities. Most of the current buildings date from the 1600s during the Malla period. Patan was an independent kingdom until the 18th century when it was conquered by Prithvi Narayan Shah during the unification of Nepal.',
+        attractions: [
+            '<strong>Patan Museum:</strong> Located in the former royal palace, housing an excellent collection of religious art.',
+            '<strong>Krishna Temple:</strong> Built in 1637, this stone temple with 21 spires is dedicated to Lord Krishna.',
+            '<strong>Golden Temple (Hiranya Varna Mahavihara):</strong> A Buddhist monastery known for its golden facades.',
+            '<strong>Mul Chowk:</strong> The central courtyard of the palace with intricate carvings.',
+            '<strong>Sundari Chowk:</strong> Features the elaborately carved Tusha Hiti stone bath.'
+        ],
+        cultural: 'Patan is considered the center of arts and crafts in Nepal, particularly known for its metalwork, stone carving, and wood carving traditions. The city celebrates numerous festivals, with Rato Machhindranath Jatra being the most important, featuring a tall chariot procession through the city streets.',
+        visitor: [
+            '<strong>Entry Fee:</strong> NPR 1000 for foreigners',
+            '<strong>Opening Hours:</strong> 7 AM to 7 PM daily',
+            '<strong>Best Time to Visit:</strong> Early morning or late afternoon',
+            '<strong>Must-See:</strong> The Patan Museum is considered one of the best museums in South Asia'
+        ]
+    },
+    'changu-narayan-temple': {
+        title: 'Changu Narayan Temple',
+        intro: 'Changu Narayan is an ancient Hindu temple dedicated to Lord Vishnu. Located on a hilltop in Bhaktapur district, it is considered the oldest temple in Nepal and showcases some of the finest examples of stone, wood, and metal craftsmanship in the Kathmandu Valley.',
+        mainImage: '/images/changu-narayan-main.jpg',
+        galleryImages: [
+            '/images/changu-narayan-temple.jpg',
+            '/images/changu-narayan-carvings.jpg',
+            '/images/changu-narayan-garuda.jpg',
+            '/images/changu-narayan-panorama.jpg'
+        ],
+        history: 'The temple is believed to have been built in the 4th century, though inscriptions date from the 5th century. The current structure dates mostly from the 13th century after being rebuilt following a fire. The temple houses the oldest stone inscription in Nepal, dating to 464 CE, which is an important source for the history of the Licchavi period.',
+        attractions: [
+            '<strong>Main Temple:</strong> Two-tiered pagoda-style temple with intricate wood carvings on the struts.',
+            '<strong>Stone Sculptures:</strong> Including the Vishnu Vikranta (Vishnu as Vamana) and Narasimha (man-lion avatar of Vishnu).',
+            '<strong>Garuda Statue:</strong> A 5th-century stone statue of Garuda, Vishnu\'s mount, kneeling in front of the temple.',
+            '<strong>Shiva-Parvati Temple:</strong> A smaller shrine within the complex.',
+            '<strong>Stone Inscriptions:</strong> Ancient inscriptions in stone dating back to the Licchavi period.'
+        ],
+        cultural: 'Changu Narayan is a living heritage site where religious practices have continued uninterrupted for centuries. The temple complex is surrounded by a traditional Newari village whose inhabitants have been preserving the temple\'s artistic and cultural traditions for generations.',
+        visitor: [
+            '<strong>Entry Fee:</strong> NPR 300 for foreigners',
+            '<strong>Opening Hours:</strong> 6 AM to 7 PM daily',
+            '<strong>Best Time to Visit:</strong> Morning hours for clear views of the valley',
+            '<strong>Special Note:</strong> The site was affected by the 2015 earthquake but has been largely restored'
+        ]
+    },
+    'lumbini': {
+        title: 'Lumbini',
+        intro: 'Lumbini is the birthplace of Lord Buddha (Siddhartha Gautama) and one of the most sacred pilgrimage sites for Buddhists worldwide. This UNESCO World Heritage Site includes the sacred garden where Buddha was born, the Maya Devi Temple, and numerous monasteries built by different countries.',
+        mainImage: '/images/lumbini-main.jpg',
+        galleryImages: [
+            '/images/lumbini-maya-devi.jpg',
+            '/images/lumbini-ashoka-pillar.jpg',
+            '/images/lumbini-peace-pagoda.jpg',
+            '/images/lumbini-monasteries.jpg'
+        ],
+        history: 'According to Buddhist tradition, Queen Maya Devi gave birth to Siddhartha Gautama in 623 BCE while en route to her parent\'s home. The exact location was rediscovered in 1896 when a pillar erected by Emperor Ashoka in 249 BCE was found, confirming the site\'s authenticity. In modern times, Lumbini has been developed as an international pilgrimage and peace center.',
+        attractions: [
+            '<strong>Maya Devi Temple:</strong> Housing the exact birthplace of Buddha, marked by a stone.',
+            '<strong>Ashoka Pillar:</strong> Erected by Emperor Ashoka in 249 BCE, confirming the birthplace of Buddha.',
+            '<strong>Sacred Garden:</strong> A peaceful area surrounding the Maya Devi Temple.',
+            '<strong>The Lumbini Monastic Zone:</strong> Divided into east and west zones with monasteries built by various Buddhist countries.',
+            '<strong>World Peace Pagoda:</strong> A white stupa built by Japanese Buddhists.'
+        ],
+        cultural: 'Lumbini is a symbol of peace and harmony, attracting pilgrims from around the world. The site represents the universal values associated with Buddha\'s teachings - peace, non-violence, and compassion. The development of Lumbini as an international pilgrimage site follows the master plan designed by Japanese architect Kenzo Tange.',
+        visitor: [
+            '<strong>Entry Fee:</strong> NPR 200 for foreigners',
+            '<strong>Opening Hours:</strong> Sunrise to sunset daily',
+            '<strong>Best Time to Visit:</strong> November to February for pleasant weather',
+            '<strong>Getting There:</strong> Domestic flights to Bhairahawa airport, then a 30-minute drive'
+        ]
+    },
+    'janaki-mandir': {
+        title: 'Janaki Mandir',
+        intro: 'Janaki Mandir (Temple) is a Hindu temple dedicated to goddess Sita, located in Janakpur in southern Nepal. Built in an elaborate Rajput style, this dazzling white structure is one of the most beautiful temples in Nepal and a significant pilgrimage site for Hindus.',
+        mainImage: '/images/janaki-mandir-main.jpg',
+        galleryImages: [
+            '/images/janaki-mandir-facade.jpg',
+            '/images/janaki-mandir-dome.jpg',
+            '/images/janaki-mandir-interior.jpg',
+            '/images/janaki-mandir-carvings.jpg'
+        ],
+        history: 'The temple was built in 1911 by Queen Brisabhanu Kunwari of Tikamgarh, India, and took nine years to complete. It marks the site where King Janak is said to have found the infant Sita while plowing a field, and later where she was married to Lord Ram, as described in the Hindu epic Ramayana.',
+        attractions: [
+            '<strong>Main Temple:</strong> A three-story structure with 60 rooms, featuring breathtaking architecture with Rajput-style domes and arches.',
+            '<strong>Intricate Carvings:</strong> The temple walls and windows feature detailed carvings depicting scenes from the Ramayana.',
+            '<strong>Central Sanctum:</strong> Houses images of Sita and Ram.',
+            '<strong>Vivah Mandap:</strong> The sacred place believed to be where Sita and Ram were married.',
+            '<strong>Surrounding Gardens:</strong> Beautiful gardens and ponds surrounding the temple.'
+        ],
+        cultural: 'Janaki Mandir is the center of the Mithila culture in Nepal. It plays a crucial role during Ram Navami and Vivah Panchami festivals, which celebrate the birth of Lord Ram and the marriage of Ram and Sita respectively. The temple attracts thousands of pilgrims from both Nepal and India during these festivals.',
+        visitor: [
+            '<strong>Entry Fee:</strong> Free (small donation appreciated)',
+            '<strong>Opening Hours:</strong> 5 AM to 9 PM daily',
+            '<strong>Best Time to Visit:</strong> November to December during Vivah Panchami',
+            '<strong>Getting There:</strong> Accessible by road from Kathmandu (8-10 hours) or flights to Janakpur airport'
+        ]
+    }
+};
+            
+            // Create HTML for each site
+            const siteDetailContainer = document.getElementById('site-detail');
+            
+            for (const [siteId, data] of Object.entries(siteDetailData)) {
+                const detailDiv = document.createElement('div');
+                detailDiv.id = siteId + '-detail';
+                detailDiv.className = 'site-detail-content';
+                detailDiv.style.display = 'none';
+                
+                detailDiv.innerHTML = `
+                    <div class="site-detail-img">
+                        <img src="images/hero.jpg" alt="${data.title} Detailed">
+                    </div>
+
+
+
+
+                    <div class="site-detail-info">
+                        <h3>${data.title}</h3>
+                        <p>${data.intro}</p>
+                        
+                        <div class="history-section">
+                            <h4>History</h4>
+                            <p>${data.history}</p>
+                        </div>
+                        
+                        <div class="architecture-section">
+                            <h4>Key Attractions</h4>
+                            <ul>
+                                ${data.attractions.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                        
+                        <div class="cultural-section">
+                            <h4>Cultural Significance</h4>
+                            <p>${data.cultural}</p>
+                        </div>
+                        
+                        <div class="visitor-info">
+                            <h4>Visitor Information</h4>
+                            <ul>
+                                ${data.visitor.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                        
+                        <a href="#${siteId}" class="back-btn">Back to Overview</a>
+                    </div>
+                `;
+                
+                siteDetailContainer.appendChild(detailDiv);
+            }
+        }
+    </script>
+    <div id="footer"></div>
+    <script src="hfscript.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beyond Everest — Discover the breathtaking landscapes, ancient cultures, and unforgettable adventures of Nepal.">
+  <title>Beyond Everest — Discover Nepal</title>
+  <link rel="stylesheet" href="hfstyles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    (function(){var t=localStorage.getItem('be-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <h1>Discover the Soul of the Himalayas</h1>
+        <p>Explore ancient temples, trek legendary trails, taste authentic cuisine, and experience the warmth of Nepal.</p>
+        <div class="hero-actions">
+          <a href="plan.html" class="btn btn-primary">Plan Your Journey</a>
+          <a href="#featured" class="btn btn-outline">Explore Highlights</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+    </section>
+
+    <!-- Weather -->
+    <div class="weather-strip">
+      <div class="weather-strip-inner">
+        <div class="weather-card" id="kathmandu-weather">
+          <h4>Kathmandu</h4>
+          <div class="weather-info">Loading&hellip;</div>
+        </div>
+        <div class="weather-card" id="pokhara-weather">
+          <h4>Pokhara</h4>
+          <div class="weather-info">Loading&hellip;</div>
+        </div>
+        <div class="weather-card" id="lukla-weather">
+          <h4>Lukla</h4>
+          <div class="weather-info">Loading&hellip;</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Highlights -->
+    <section id="featured">
+      <div class="section-header centered">
+        <span class="section-label">Featured</span>
+        <h2 class="section-title">Highlights of Nepal</h2>
+        <p class="section-desc">From towering peaks to ancient squares, discover what makes Nepal a destination unlike any other.</p>
+      </div>
+      <div class="featured-grid">
+        <div class="feature-card">
+          <div class="card-image">
+            <img src="images/everest-base-camp.jpg" alt="Everest Base Camp Trek" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Everest Base Camp Trek</h3>
+            <p>Journey to the foot of the world's tallest mountain through breathtaking Sherpa villages and glacial valleys.</p>
+            <a href="trekking.html" class="card-link">Explore Trek <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="card-image">
+            <img src="images/kathmandu-durbar.jpg" alt="Kathmandu Durbar Square" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Kathmandu Durbar Square</h3>
+            <p>Ancient palaces, intricate woodwork, and courtyards showcasing centuries of Newari architectural mastery.</p>
+            <a href="kathmandu.html" class="card-link">Discover More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="card-image">
+            <img src="images/phewa-lake.jpg" alt="Phewa Lake, Pokhara" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Pokhara &amp; Phewa Lake</h3>
+            <p>Serene lakeside town with stunning Annapurna reflections, perfect for paragliding and peaceful boat rides.</p>
+            <a href="lakes.html" class="card-link">Visit Lakes <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="card-image">
+            <img src="images/dashain.jpg" alt="Dashain Festival" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Dashain &amp; Tihar Festivals</h3>
+            <p>Experience Nepal's grandest celebrations — vibrant rituals, family gatherings, and the triumph of good over evil.</p>
+            <a href="dashai.html" class="card-link">Learn More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="category-section">
+      <div class="section-inner">
+        <div class="section-header centered">
+          <span class="section-label">Categories</span>
+          <h2 class="section-title">Explore Nepal</h2>
+          <p class="section-desc">Find your perfect Nepali experience.</p>
+        </div>
+        <div class="category-grid">
+          <a href="culture.html" class="category-card">
+            <div class="cat-icon"><i class="fas fa-masks-theater"></i></div>
+            <h3>Culture &amp; Traditions</h3>
+          </a>
+          <a href="mountains.html" class="category-card">
+            <div class="cat-icon"><i class="fas fa-mountain"></i></div>
+            <h3>Mountains &amp; Peaks</h3>
+          </a>
+          <a href="temples.html" class="category-card">
+            <div class="cat-icon"><i class="fas fa-place-of-worship"></i></div>
+            <h3>Temples</h3>
+          </a>
+          <a href="food.html" class="category-card">
+            <div class="cat-icon"><i class="fas fa-utensils"></i></div>
+            <h3>Nepali Cuisine</h3>
+          </a>
+          <a href="adventure.html" class="category-card">
+            <div class="cat-icon"><i class="fas fa-person-hiking"></i></div>
+            <h3>Adventure Sports</h3>
+          </a>
+          <a href="festivals.html" class="category-card">
+            <div class="cat-icon"><i class="fas fa-calendar-days"></i></div>
+            <h3>Festivals &amp; Events</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Guide -->
+    <section>
+      <div class="guide-section">
+        <div class="guide-content">
+          <span class="section-label">Travel Guide</span>
+          <h2>First Time in Nepal?</h2>
+          <p class="section-desc">Everything you need for a seamless journey through the Himalayan nation.</p>
+          <ul class="guide-list">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Visa requirements and entry procedures</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Best times to visit different regions</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Health, altitude, and safety essentials</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Local customs, etiquette, and tipping</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Curated itineraries for every duration</li>
+          </ul>
+          <a href="travel-guide.html" class="btn btn-secondary">Read Complete Guide</a>
+        </div>
+        <div class="guide-image">
+          <img src="images/travel-guide.svg" alt="Nepal Travel Guide" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+      <div class="section-inner">
+        <div class="section-header centered">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">Traveler Stories</h2>
+          <p class="section-desc">Hear from people who have experienced the magic of Nepal firsthand.</p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <blockquote>The trek to Annapurna Base Camp was life-changing. The guides were knowledgeable, the views breathtaking, and the tea houses gave us a genuine taste of Nepali hospitality.</blockquote>
+            <div class="testimonial-author">
+              <img src="images/testimonial-1.jpg" alt="Sarah Johnson" loading="lazy">
+              <div>
+                <div class="name">Sarah Johnson</div>
+                <div class="location">United States</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <blockquote>Experiencing Dashain festival with a local family in Kathmandu was the highlight of my trip. The cultural immersion made me feel at home thousands of miles away.</blockquote>
+            <div class="testimonial-author">
+              <img src="images/testimonial-2.jpg" alt="Marco Bianchi" loading="lazy">
+              <div>
+                <div class="name">Marco Bianchi</div>
+                <div class="location">Italy</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <blockquote>The paragliding experience in Pokhara with views of the Annapurna range and Phewa Lake was absolutely stunning. Nepal offers unmatched adventure.</blockquote>
+            <div class="testimonial-author">
+              <img src="images/testimonial-3.jpg" alt="Aisha Patel" loading="lazy">
+              <div>
+                <div class="name">Aisha Patel</div>
+                <div class="location">Australia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="newsletter-inner">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for travel tips, seasonal guides, and exclusive Nepal travel insights.</p>
+        <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="your@email.com" required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="hfscript.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
